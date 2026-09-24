@@ -1,6 +1,6 @@
 // Español. Mismas claves que en.js (tests/i18n.test.mjs lo comprueba).
 export default {
-  'app.title': 'Chilean AltOutputs',
+  'app.title': 'Beyond Articles',
   'app.hub': 'Metadata Audits',
   'app.theme': 'Cambiar tema',
   'app.language': 'Idioma',
@@ -45,7 +45,7 @@ export default {
   'th.completeness': 'Completitud',
   'series.records': 'Registros',
 
-  'overview.title': 'Chilean AltOutputs: más allá de los artículos',
+  'overview.title': 'Beyond Articles: resultados de investigación chilenos en DataCite',
   'overview.subAll': '{n} resultados de investigación de Chile que no son artículos, y qué tan completa es la descripción de cada uno.',
   'overview.subType': '{type}: {n} registros ({pct}% de completitud)',
   'overview.subEmpty': 'Completitud de metadatos de los resultados de investigación chilenos que no son artículos.',

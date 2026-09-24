@@ -1,4 +1,4 @@
-# chilean-altoutputs: Chilean AltOutputs Audit
+# chilean-altoutputs: Beyond Articles (Chilean research outputs in DataCite)
 
 Audits metadata completeness of Chilean non-article research outputs (software, datasets, notebooks, models, images, etc.) using DataCite API and ANID OAI-PMH.
 

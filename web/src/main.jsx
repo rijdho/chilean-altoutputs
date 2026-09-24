@@ -50,7 +50,7 @@ function App() {
     <div className={`app${railOpen ? ' rail-open' : ''}`}>
       <aside className="rail">
         <a className="brand-mark" href="./">
-          <span className="brand-glyph" style={{ '--glyph': "'CA'" }} aria-hidden="true" />
+          <span className="brand-glyph" style={{ '--glyph': "'BA'" }} aria-hidden="true" />
           <span>
             <p className="brand-name">{t('app.title')}</p>
             <p className="brand-sub">rijdho.github.io</p>

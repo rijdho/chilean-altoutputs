@@ -1,7 +1,7 @@
 // English: the source of truth. es.js and de.js are measured against it (tests/i18n.test.mjs).
 // Inline markup: **bold**, *em*, `code`, [text](url). Placeholders: {name}.
 export default {
-  'app.title': 'Chilean AltOutputs',
+  'app.title': 'Beyond Articles',
   'app.hub': 'Metadata Audits',
   'app.theme': 'Toggle theme',
   'app.language': 'Language',
@@ -46,7 +46,7 @@ export default {
   'th.completeness': 'Completeness',
   'series.records': 'Records',
 
-  'overview.title': 'Chilean AltOutputs: beyond articles',
+  'overview.title': 'Beyond Articles: Chilean research outputs in DataCite',
   'overview.subAll': '{n} research outputs from Chile that are not articles, and how completely each is described.',
   'overview.subType': '{type}: {n} records ({pct}% completeness)',
   'overview.subEmpty': 'Metadata completeness of Chilean non-article research outputs.',

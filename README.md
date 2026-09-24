@@ -1,4 +1,4 @@
-# chilean-altoutputs
+# Beyond Articles
 
 How complete is the metadata of Chilean research outputs that are not articles: datasets,
 software, images, collections, data management plans? This project harvests them from DataCite

@@ -1,6 +1,6 @@
 // Deutsch. Dieselben Schlüssel wie en.js (tests/i18n.test.mjs prüft das).
 export default {
-  'app.title': 'Chilean AltOutputs',
+  'app.title': 'Beyond Articles',
   'app.hub': 'Metadata Audits',
   'app.theme': 'Farbschema wechseln',
   'app.language': 'Sprache',
@@ -45,7 +45,7 @@ export default {
   'th.completeness': 'Vollständigkeit',
   'series.records': 'Datensätze',
 
-  'overview.title': 'Chilean AltOutputs: jenseits von Artikeln',
+  'overview.title': 'Beyond Articles: chilenische Forschungsergebnisse in DataCite',
   'overview.subAll': '{n} Forschungsergebnisse aus Chile, die keine Artikel sind, und wie vollständig jedes beschrieben ist.',
   'overview.subType': '{type}: {n} Datensätze ({pct}% Vollständigkeit)',
   'overview.subEmpty': 'Vollständigkeit der Metadaten chilenischer Forschungsergebnisse, die keine Artikel sind.',
