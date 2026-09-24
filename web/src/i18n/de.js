@@ -202,7 +202,7 @@ export default {
   'rail.dashboard': 'Dashboard',
   'rail.guide': 'Anleitung',
   'rail.data': 'Daten aus DataCite und der ANID',
-  'rail.credits': 'von [@rijdho](https://rijdho.github.io) · MIT · CC BY 4.0',
+  'rail.credits': 'Von [Ricardo Hartley Belmar](https://rijdho.github.io)',
   'top.source': 'Quellcode',
   'top.menu': 'Menü',
   'top.closeMenu': 'Menü schließen',
