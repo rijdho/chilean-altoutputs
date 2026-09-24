@@ -12,7 +12,7 @@ permissions:
 
 concurrency:
   group: pages
-  # false on purpose. With true, a push cancels the in-flight deploy — and on a day
+  # false on purpose. With true, a push cancels the in-flight deploy, and on a day
   # when the Pages backend publishes slowly (2026-08-06: ~15 min instead of ~10 s),
   # pushing more often than that means NOTHING ever completes: each deploy dies
   # mid-publish and leaves a zombie deployment_in_progress record on the backend
@@ -53,7 +53,7 @@ jobs:
       # work: deploy-pages clamps the input with Math.min(timeoutInput, MAX_TIMEOUT)
       # where MAX_TIMEOUT = 600000 (src/internal/deployment.js, unchanged across
       # v4, v5 and main), and the Pages backend enforces its own 10-minute deadline
-      # anyway — GitHub's docs say so outright. The input can only ever *lower* the
+      # anyway: GitHub's docs say so outright. The input can only ever *lower* the
       # wait. Tried on 2026-08-06: `timeout: 1800000` was accepted and echoed in the
       # log, and the job still aborted at 604 seconds.
       #

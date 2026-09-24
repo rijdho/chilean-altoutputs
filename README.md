@@ -8,7 +8,7 @@ and from ANID's repository, scores each record on ten fields, and shows the resu
 
 Available in **English, German and Spanish** (auto-detected, switchable).
 
-Part of the [Metadata Audits](https://metaudits.rijdho.org/) family.
+Part of the [Metadata Audits](https://rijdho.github.io/metaudits-home/) family.
 
 ## What it measures
 
