@@ -58,7 +58,7 @@ function rich(text) {
     if (m[1]) out.push(<strong key={i++}>{m[1]}</strong>);
     else if (m[2]) out.push(<em key={i++}>{m[2]}</em>);
     else if (m[3]) out.push(<code key={i++}>{m[3]}</code>);
-    else out.push(<a key={i++} href={m[5]} target="_blank" rel="noopener" style={{ color: 'var(--color-accent)' }}>{m[4]}</a>);
+    else out.push(<a key={i++} href={m[5]} target="_blank" rel="noopener">{m[4]}</a>);  // colour from house.css
     last = re.lastIndex;
   }
   if (last < text.length) out.push(text.slice(last));

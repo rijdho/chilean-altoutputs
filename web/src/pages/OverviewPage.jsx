@@ -113,10 +113,11 @@ export default function OverviewPage() {
     <div className="space-y-6 animate-fade-in">
       {/* Title */}
       <div>
-        <h1 className="text-xl font-bold" style={{ color: 'var(--color-text)' }}>
+        <div className="eyebrow">{t('overview.eyebrow')}</div>
+        <h1 style={{ fontSize: '1.7rem', margin: '8px 0 4px' }}>
           {t('overview.title')}
         </h1>
-        <p className="text-sm mt-1" style={{ color: 'var(--color-text2)' }}>
+        <p className="lede" style={{ fontSize: '1rem', color: 'var(--text)' }}>
           {hasData
             ? selectedType === 'All'
               ? t('overview.subAll', { n: fmt(overview.totalRecords) })
@@ -124,9 +125,7 @@ export default function OverviewPage() {
             : t('overview.subEmpty')}
         </p>
         {selectedType === 'All' && (
-          <p className="text-xs mt-2 max-w-2xl" style={{ color: 'var(--color-text2)', opacity: 0.8 }}>
-            {t('overview.lede')}
-          </p>
+          <p className="lede">{t('overview.lede')}</p>
         )}
       </div>
 

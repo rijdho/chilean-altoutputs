@@ -54,10 +54,10 @@ export default function RepositoriesPage() {
   return (
     <div className="space-y-6 animate-fade-in">
       <div>
-        <h1 className="text-xl font-bold" style={{ color: 'var(--color-text)' }}>
+        <h1 style={{ fontSize: '1.7rem', margin: '0 0 4px' }}>
           {t('repos.title')}
         </h1>
-        <p className="text-sm mt-1" style={{ color: 'var(--color-text2)' }}>
+        <p className="lede">
           {selectedType === 'All'
             ? t('repos.subAll')
             : t('repos.subType', { type: selectedType, n: fmt(typeData?.count ?? 0) })}

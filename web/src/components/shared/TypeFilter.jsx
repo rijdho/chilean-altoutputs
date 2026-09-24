@@ -13,12 +13,7 @@ export default function TypeFilter({ value, onChange }) {
           key={ty}
           onClick={() => onChange(ty)}
           aria-pressed={value === ty}
-          className="px-2.5 py-1 text-xs rounded-full border transition-colors cursor-pointer"
-          style={{
-            background: value === ty ? 'var(--color-accent)' : 'transparent',
-            color: value === ty ? '#fff' : 'var(--color-text2)',
-            borderColor: value === ty ? 'var(--color-accent)' : 'var(--color-border)',
-          }}
+          className="chip"
         >
           {ty === 'All' ? t('common.all') : `${ty} (${n(types.find(x => x.type === ty)?.count ?? 0)})`}
         </button>

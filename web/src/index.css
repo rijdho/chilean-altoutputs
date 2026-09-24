@@ -1,100 +1,35 @@
 @import "tailwindcss";
+/* The shared look. A copy of rijdho/house-style: never edit it, run `npm run sync-house`. */
+@import "./house/house.css";
 
-/* Self-hosted Inter (variable), copied from coara-action-planner. No font CDN: a Google Fonts
-   <link> sends every visitor's IP to Google, and the CSP (font-src 'self') would block it anyway.
-   Vite bundles the woff2 files, so the relative urls survive the base "./" build. */
-@font-face {
-  font-family: "Inter Variable"; font-style: normal; font-display: swap; font-weight: 100 900;
-  src: url("./assets/fonts/inter-latin-wght-normal.woff2") format("woff2-variations");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: "Inter Variable"; font-style: normal; font-display: swap; font-weight: 100 900;
-  src: url("./assets/fonts/inter-latin-ext-wght-normal.woff2") format("woff2-variations");
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-/* ── Theme custom properties (dark default, "Obsidian Teal" palette) ──────── */
-
+/* ── This dashboard's names, mapped onto the house tokens ─────────────────────
+   Components and charts read --color-*; the values come from the house palette, so light, dark and
+   the OS preference all follow it. DataCite and ANID are the two data series: the brand violet and
+   the FAIR amber, which stay distinct for colour-vision deficiency in both modes. */
 :root {
-  --color-bg:       #0c110f;
-  --color-surface:  #141c19;
-  --color-surface2: #1a2723;
-  --color-border:   #243530;
-  --color-accent:   #5bb5a2;
-  --color-accent2:  #4a9a89;
-  --color-text:     #e0e0e0;
-  --color-text2:    #a0a0a0;
-  --color-tier1:    #5bb5a2;
-  --color-tier2:    #e8a838;
-  --color-gap:      #e85858;
+  --color-bg:       var(--paper);
+  --color-surface:  var(--surface);
+  --color-surface2: var(--surface-2);
+  --color-border:   var(--hairline);
+  --color-accent:   var(--brand);
+  --color-accent2:  var(--brand);
+  --color-text:     var(--ink);
+  --color-text2:    var(--ink-2);
+  --color-tier1:    var(--brand);
+  --color-tier2:    var(--f-A);
+  --color-gap:      var(--lvl-lo);
 }
 
-[data-theme="light"] {
-  --color-bg:       #f8fafc;
-  --color-surface:  #ffffff;
-  --color-surface2: #eef3f1;
-  --color-border:   #d0d8d5;
-  --color-accent:   #0891b2;
-  --color-accent2:  #0e7490;
-  --color-text:     #0f172a;
-  --color-text2:    #64748b;
-  --color-tier1:    #0891b2;
-  --color-tier2:    #d97706;
-  --color-gap:      #dc2626;
-}
+/* A dashboard needs more width than the house default. */
+.content-inner { max-width: 1180px; }
 
-body {
-  background-color: var(--color-bg);
-  color: var(--color-text);
-  font-family: "Inter Variable", system-ui, -apple-system, sans-serif;
-  margin: 0;
-}
-
-/* ── Recharts overrides ──────────────────────────────────────────────────── */
-
-.recharts-cartesian-axis-tick-value {
-  fill: var(--color-text2) !important;
-  font-size: 11px;
-}
-
-.recharts-legend-item-text {
-  color: var(--color-text) !important;
-}
-
-.recharts-tooltip-wrapper .recharts-default-tooltip {
-  background-color: var(--color-surface) !important;
-  border: 1px solid var(--color-border) !important;
-  color: var(--color-text) !important;
-}
-
-/* ── Scrollbar ───────────────────────────────────────────────────────────── */
-
-::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--color-surface);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--color-border);
-  border-radius: 3px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--color-accent2);
-}
-
-/* ── Fade-in animation ───────────────────────────────────────────────────── */
+/* ── Recharts, in house type and colours ───────────────────────────────────── */
+.recharts-cartesian-axis-tick-value { fill: var(--muted) !important; font-size: 11px; font-family: var(--mono); }
+.recharts-legend-item-text { color: var(--text) !important; font-family: var(--mono); font-size: 12px; }
+.recharts-cartesian-grid line { stroke: var(--hair); }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(8px); }
+  from { opacity: 0; transform: translateY(6px); }
   to   { opacity: 1; transform: translateY(0); }
 }
-
-.animate-fade-in {
-  animation: fadeIn 0.3s ease-out both;
-}
+.animate-fade-in { animation: fadeIn 0.25s ease-out both; }

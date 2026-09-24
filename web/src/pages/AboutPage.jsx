@@ -35,7 +35,7 @@ export default function AboutPage() {
 
   return (
     <div className="space-y-6 max-w-3xl animate-fade-in">
-      <h1 className="text-xl font-bold" style={{ color: 'var(--color-text)' }}>{t('about.title')}</h1>
+      <h1 style={{ fontSize: '1.7rem', margin: '0 0 4px' }}>{t('about.title')}</h1>
 
       <Section title={t('about.whatTitle')}>
         <p>{tr('about.what1')}</p>

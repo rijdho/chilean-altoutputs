@@ -1,20 +1,15 @@
 export default function KpiCard({ label, value, sub, color }) {
   return (
-    <div
-      className="rounded-lg border p-4 text-center"
-      style={{ background: 'var(--color-surface)', borderColor: 'var(--color-border)' }}
-    >
-      <div className="text-2xl font-bold" style={{ color: color || 'var(--color-accent)' }}>
+    <div className="card" style={{ textAlign: 'center', padding: '18px 16px' }}>
+      <div style={{ fontFamily: 'var(--disp)', fontWeight: 800, fontSize: '1.9rem', letterSpacing: '-0.03em',
+        lineHeight: 1.1, color: color || 'var(--brand)' }}>
         {value}
       </div>
-      <div className="text-xs mt-1" style={{ color: 'var(--color-text2)' }}>
+      <div className="mono" style={{ fontSize: '.72rem', letterSpacing: '.06em', textTransform: 'uppercase',
+        color: 'var(--muted)', marginTop: 6 }}>
         {label}
       </div>
-      {sub && (
-        <div className="text-xs mt-0.5" style={{ color: 'var(--color-text2)', opacity: 0.7 }}>
-          {sub}
-        </div>
-      )}
+      {sub && <div className="muted" style={{ fontSize: '.75rem', marginTop: 2 }}>{sub}</div>}
     </div>
   );
 }

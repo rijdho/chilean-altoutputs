@@ -60,10 +60,10 @@ export default function CompletenessPage() {
   return (
     <div className="space-y-6 animate-fade-in">
       <div>
-        <h1 className="text-xl font-bold" style={{ color: 'var(--color-text)' }}>
+        <h1 style={{ fontSize: '1.7rem', margin: '0 0 4px' }}>
           {t('compl.title')}
         </h1>
-        <p className="text-sm mt-1" style={{ color: 'var(--color-text2)' }}>
+        <p className="lede">
           {selectedType === 'All'
             ? t('compl.subAll')
             : t('compl.subType', { type: selectedType, n: n(typeData?.count ?? 0), pct: n(typeData?.avgCompleteness ?? 0) })}

@@ -57,6 +57,10 @@ npm run pipeline:analyze && npm run pipeline:aggregate   # recompute from existi
 cd web && npm run dev
 ```
 
+The look is the shared house style ([rijdho/house-style](https://github.com/rijdho/house-style)):
+`web/src/house/` is an exact copy, refreshed with `npm run sync-house` from a sibling checkout, and a
+test fails if it is edited or falls behind. Styles for this dashboard only go in `web/src/index.css`.
+
 A push to `main` runs the tests, builds `web/` and publishes it to GitHub Pages
 (`.github/workflows/deploy.yml`). The page loads nothing from any other origin: fonts are
 self-hosted, and a Content-Security-Policy in `web/index.html` enforces it.

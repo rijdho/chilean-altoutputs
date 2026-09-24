@@ -198,4 +198,13 @@ export default {
   'anidType.MaterialAudiovisual': 'Material audiovisual',
   'anidType.MaterialCartografico': 'Material cartográfico',
   'anidType.Software': 'Software',
+
+  'rail.dashboard': 'Panel',
+  'rail.guide': 'Guía',
+  'rail.data': 'Datos de DataCite y ANID',
+  'rail.credits': 'por [@rijdho](https://rijdho.github.io) · MIT · CC BY 4.0',
+  'top.source': 'código',
+  'top.menu': 'Menú',
+  'top.closeMenu': 'Cerrar menú',
+  'overview.eyebrow': 'Metadatos más allá de los artículos',
 };
