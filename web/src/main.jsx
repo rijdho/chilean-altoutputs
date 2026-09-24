@@ -70,7 +70,8 @@ function App() {
         ))}
         <div className="rail-foot">
           {tr('rail.credits')}<br />
-          {t('footer.license')}<br />
+          {/* One licence per line: the rail is too narrow for both, and would break inside "CC BY 4.0". */}
+          {t('footer.license').split(", ").map((part) => <span key={part}>{part}<br /></span>)}
           {tr('footer.source')}<br />
           {tr('footer.family')}<br />
           {t('rail.data')}
