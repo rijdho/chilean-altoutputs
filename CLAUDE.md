@@ -65,12 +65,12 @@ chilean-altoutputs/
 | Field | What it checks |
 |-------|----------------|
 | hasOrcid | Any creator has a well-formed ORCID (pattern + check digit; `pipeline/lib/pids.mjs`). Before 2026-09-24 the scheme alone counted, nulls included |
-| hasLicense | Rights/license specified |
-| hasOpenLicense | CC-BY, CC0, MIT, GPL, Apache, BSD |
+| hasLicense | Licence or terms of use; access statements do not count (pipeline/lib/rules.mjs) |
+| hasOpenLicense | CC BY, CC BY-SA, CC0, OSI; NC/ND excluded |
 | hasSubjects | Subject keywords present |
 | hasDescription | Non-trivial description (>20 words) |
 | hasFunding | Funding/grant info |
-| hasRelatedWorks | Related identifiers (DOI links) |
+| hasRelatedWorks | Link to another work; own files and versions excluded |
 | hasVersion | Version info |
 | hasLanguage | Language specified |
 | hasPublisher | Publisher/repository specified |

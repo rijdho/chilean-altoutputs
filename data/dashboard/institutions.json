@@ -2,7 +2,7 @@
   {
     "name": "Universidad de Chile",
     "count": 7307,
-    "avgCompleteness": 44.6,
+    "avgCompleteness": 36.7,
     "topTypes": [
       {
         "type": "Dataset",
@@ -21,7 +21,7 @@
   {
     "name": "Pontificia Universidad Católica de Chile",
     "count": 2011,
-    "avgCompleteness": 53.5,
+    "avgCompleteness": 48.7,
     "topTypes": [
       {
         "type": "Dataset",
@@ -40,7 +40,7 @@
   {
     "name": "Universidad de Concepción",
     "count": 871,
-    "avgCompleteness": 59.8,
+    "avgCompleteness": 57.3,
     "topTypes": [
       {
         "type": "Image",
@@ -59,7 +59,7 @@
   {
     "name": "Universidad Austral de Chile",
     "count": 825,
-    "avgCompleteness": 59.9,
+    "avgCompleteness": 54.6,
     "topTypes": [
       {
         "type": "Image",
@@ -78,7 +78,7 @@
   {
     "name": "Universidad de Santiago de Chile",
     "count": 740,
-    "avgCompleteness": 46.4,
+    "avgCompleteness": 39.6,
     "topTypes": [
       {
         "type": "Dataset",
@@ -97,7 +97,7 @@
   {
     "name": "Universidad Autónoma de Chile",
     "count": 334,
-    "avgCompleteness": 64.1,
+    "avgCompleteness": 57.2,
     "topTypes": [
       {
         "type": "Dataset",
@@ -116,7 +116,7 @@
   {
     "name": "Universidad Católica del Norte",
     "count": 260,
-    "avgCompleteness": 56.6,
+    "avgCompleteness": 52.8,
     "topTypes": [
       {
         "type": "Image",
@@ -135,7 +135,7 @@
   {
     "name": "Universidad Andrés Bello",
     "count": 137,
-    "avgCompleteness": 62.8,
+    "avgCompleteness": 60.8,
     "topTypes": [
       {
         "type": "Image",
@@ -154,7 +154,7 @@
   {
     "name": "Universidad de Valparaíso",
     "count": 98,
-    "avgCompleteness": 58.3,
+    "avgCompleteness": 54.7,
     "topTypes": [
       {
         "type": "Image",
@@ -173,7 +173,7 @@
   {
     "name": "Universidad de Los Andes, Chile",
     "count": 96,
-    "avgCompleteness": 61.9,
+    "avgCompleteness": 57.3,
     "topTypes": [
       {
         "type": "Collection",
@@ -214,7 +214,7 @@
   {
     "name": "Área de Entomología, Museo Nacional de Historia Natural, Santiago, Chile.",
     "count": 87,
-    "avgCompleteness": 58.3,
+    "avgCompleteness": 55.5,
     "topTypes": [
       {
         "type": "Image",
@@ -322,7 +322,7 @@
   {
     "name": "Central Bank of Chile",
     "count": 50,
-    "avgCompleteness": 30,
+    "avgCompleteness": 28.2,
     "topTypes": [
       {
         "type": "Dataset",
@@ -337,7 +337,7 @@
   {
     "name": "Universidad de La Frontera",
     "count": 49,
-    "avgCompleteness": 65.7,
+    "avgCompleteness": 60.8,
     "topTypes": [
       {
         "type": "Dataset",
@@ -352,7 +352,7 @@
   {
     "name": "Zoological Museum of the Moscow Lomonosov State University, Bolshaya Nikitskaja Str. 2, Moscow, 125009, Russia. schileyko1965@gmail.com",
     "count": 48,
-    "avgCompleteness": 60,
+    "avgCompleteness": 50,
     "topTypes": [
       {
         "type": "Image",
@@ -374,7 +374,7 @@
   {
     "name": "Universidad de Talca",
     "count": 47,
-    "avgCompleteness": 58.1,
+    "avgCompleteness": 55.3,
     "topTypes": [
       {
         "type": "Image",
@@ -448,7 +448,7 @@
   {
     "name": "Universidad Central de Chile",
     "count": 44,
-    "avgCompleteness": 77.5,
+    "avgCompleteness": 72,
     "topTypes": [
       {
         "type": "Dataset",
@@ -467,7 +467,7 @@
   {
     "name": "Avenida El Litre #1310, Valparaíso, Chile.",
     "count": 42,
-    "avgCompleteness": 51.4,
+    "avgCompleteness": 41.4,
     "topTypes": [
       {
         "type": "Image",
@@ -493,7 +493,7 @@
   {
     "name": "Departamento de Recursos Ambientales, Facultad de Ciencias Agronómicas, Universidad de Tarapacá, Arica, Chile",
     "count": 40,
-    "avgCompleteness": 58,
+    "avgCompleteness": 53,
     "topTypes": [
       {
         "type": "Image",
@@ -508,7 +508,7 @@
   {
     "name": "Pontificial Catholic University of Valparaiso",
     "count": 38,
-    "avgCompleteness": 65,
+    "avgCompleteness": 61.3,
     "topTypes": [
       {
         "type": "Dataset",
@@ -557,7 +557,7 @@
   {
     "name": "Instituto Antártico Chileno",
     "count": 36,
-    "avgCompleteness": 66.9,
+    "avgCompleteness": 59.4,
     "topTypes": [
       {
         "type": "Dataset",

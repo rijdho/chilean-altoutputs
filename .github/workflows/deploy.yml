@@ -31,6 +31,9 @@ jobs:
           cache: npm
           cache-dependency-path: web/package-lock.json
       # The dashboard lives in web/ and builds from the tracked data in data/dashboard/.
+      # The counting rules (what is a licence, an open licence, a link to another work) are pure
+      # and need no install; they gate the deploy like the dashboard tests.
+      - run: node --test pipeline/tests/*.test.mjs
       - run: npm ci
         working-directory: web
       # The tests gate the artifact: catalogues in step, dashboard files consistent.

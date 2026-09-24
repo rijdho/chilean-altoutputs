@@ -23,19 +23,19 @@
   {
     "id": "hasLicense",
     "label": "License",
-    "description": "Rights or license information specified",
-    "pct": 65.7,
-    "count": 10062,
+    "description": "A licence or terms of use in the rights field (access statements such as Open Access or Restricted Access do not count)",
+    "pct": 57.9,
+    "count": 8861,
     "bySource": {
-      "DataCite": 66.2,
-      "ANID": 56.6
+      "DataCite": 58.3,
+      "ANID": 50.5
     },
     "byType": {
-      "Dataset": 48.8,
-      "Image": 99.7,
+      "Dataset": 47.4,
+      "Image": 74.2,
       "Collection": 100,
-      "Other": 98.8,
-      "Software": 97.9,
+      "Other": 96.8,
+      "Software": 87.3,
       "OutputManagementPlan": 3.5,
       "Audiovisual": 39,
       "Model": 87
@@ -44,21 +44,21 @@
   {
     "id": "hasOpenLicense",
     "label": "Open License",
-    "description": "CC-BY, CC0, MIT, GPL, Apache, or BSD license",
-    "pct": 47.1,
-    "count": 7208,
+    "description": "An open licence: CC BY, CC BY-SA, CC0 or an OSI software licence (NonCommercial and NoDerivatives do not count)",
+    "pct": 45.3,
+    "count": 6928,
     "bySource": {
-      "DataCite": 48.2,
-      "ANID": 26.4
+      "DataCite": 47.5,
+      "ANID": 2.8
     },
     "byType": {
-      "Dataset": 45,
-      "Image": 43.5,
+      "Dataset": 42.7,
+      "Image": 43.3,
       "Collection": 100,
-      "Other": 45,
-      "Software": 83.6,
-      "OutputManagementPlan": 3.5,
-      "Audiovisual": 38.4,
+      "Other": 37.4,
+      "Software": 82.1,
+      "OutputManagementPlan": 0,
+      "Audiovisual": 29.3,
       "Model": 87
     }
   },
@@ -128,22 +128,22 @@
   {
     "id": "hasRelatedWorks",
     "label": "Related Identifiers",
-    "description": "Related identifiers (DOI links to other works)",
-    "pct": 91.6,
-    "count": 14029,
+    "description": "A link to another work (links to the record's own files or versions do not count)",
+    "pct": 42.9,
+    "count": 6571,
     "bySource": {
-      "DataCite": 93.7,
+      "DataCite": 42.5,
       "ANID": 51.7
     },
     "byType": {
-      "Dataset": 92.5,
-      "Image": 99.7,
-      "Collection": 59.8,
-      "Other": 96.8,
-      "Software": 95.8,
+      "Dataset": 20.6,
+      "Image": 97.6,
+      "Collection": 18.8,
+      "Other": 72.5,
+      "Software": 62.7,
       "OutputManagementPlan": 7.5,
-      "Audiovisual": 64,
-      "Model": 87
+      "Audiovisual": 46.3,
+      "Model": 17.4
     }
   },
   {

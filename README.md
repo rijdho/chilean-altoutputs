@@ -18,12 +18,12 @@ records of ANID's repository (OAI-PMH, `dim` format). Each record is checked for
 | Field | Counts when |
 |---|---|
 | hasOrcid | a creator has a **well-formed** ORCID: pattern and check digit, marked as ORCID by scheme, schemeUri or value |
-| hasLicense | rights or licence information is present |
-| hasOpenLicense | the licence is open (CC BY, CC0, MIT, GPL, Apache, BSD) |
+| hasLicense | a licence or terms of use is given; access statements (Open Access, Restricted Access) do not count |
+| hasOpenLicense | the licence is open: CC BY, CC BY-SA, CC0 or an OSI licence; NC and ND do not count |
 | hasSubjects | subject keywords are present |
 | hasDescription | a description of more than 20 words |
 | hasFunding | funding or grant information is present |
-| hasRelatedWorks | related identifiers are present |
+| hasRelatedWorks | a link to another work; links to the record's own files or versions do not count |
 | hasVersion | version information is present |
 | hasLanguage | a language is given |
 | hasPublisher | a publisher or repository is given |

@@ -48,8 +48,8 @@
   {
     "year": 2005,
     "count": 32,
-    "avgCompleteness": 55.6,
-    "dcCompleteness": 55.6,
+    "avgCompleteness": 49.4,
+    "dcCompleteness": 49.4,
     "anidCompleteness": null,
     "bySource": {
       "DataCite": 32,
@@ -57,7 +57,7 @@
     },
     "fields": {
       "hasOrcid": 6.3,
-      "hasLicense": 93.8,
+      "hasLicense": 31.3,
       "hasOpenLicense": 28.1,
       "hasSubjects": 100,
       "hasDescription": 100,
@@ -71,8 +71,8 @@
   {
     "year": 2006,
     "count": 6,
-    "avgCompleteness": 50,
-    "dcCompleteness": 50,
+    "avgCompleteness": 40,
+    "dcCompleteness": 40,
     "anidCompleteness": null,
     "bySource": {
       "DataCite": 6,
@@ -80,7 +80,7 @@
     },
     "fields": {
       "hasOrcid": 0,
-      "hasLicense": 100,
+      "hasLicense": 0,
       "hasOpenLicense": 0,
       "hasSubjects": 100,
       "hasDescription": 100,
@@ -94,8 +94,8 @@
   {
     "year": 2007,
     "count": 16,
-    "avgCompleteness": 45,
-    "dcCompleteness": 45,
+    "avgCompleteness": 38.8,
+    "dcCompleteness": 38.8,
     "anidCompleteness": null,
     "bySource": {
       "DataCite": 16,
@@ -103,12 +103,12 @@
     },
     "fields": {
       "hasOrcid": 0,
-      "hasLicense": 62.5,
+      "hasLicense": 12.5,
       "hasOpenLicense": 12.5,
       "hasSubjects": 75,
       "hasDescription": 75,
       "hasFunding": 0,
-      "hasRelatedWorks": 87.5,
+      "hasRelatedWorks": 75,
       "hasVersion": 25,
       "hasLanguage": 12.5,
       "hasPublisher": 100
@@ -140,17 +140,17 @@
   {
     "year": 2009,
     "count": 18,
-    "avgCompleteness": 55,
-    "dcCompleteness": 55.3,
-    "anidCompleteness": 50,
+    "avgCompleteness": 46.7,
+    "dcCompleteness": 47.1,
+    "anidCompleteness": 40,
     "bySource": {
       "DataCite": 17,
       "ANID": 1
     },
     "fields": {
       "hasOrcid": 11.1,
-      "hasLicense": 100,
-      "hasOpenLicense": 11.1,
+      "hasLicense": 22.2,
+      "hasOpenLicense": 5.6,
       "hasSubjects": 100,
       "hasDescription": 94.4,
       "hasFunding": 5.6,
@@ -163,8 +163,8 @@
   {
     "year": 2010,
     "count": 30,
-    "avgCompleteness": 44,
-    "dcCompleteness": 44,
+    "avgCompleteness": 40,
+    "dcCompleteness": 40,
     "anidCompleteness": null,
     "bySource": {
       "DataCite": 30,
@@ -172,12 +172,12 @@
     },
     "fields": {
       "hasOrcid": 0,
-      "hasLicense": 73.3,
+      "hasLicense": 40,
       "hasOpenLicense": 6.7,
       "hasSubjects": 73.3,
       "hasDescription": 76.7,
       "hasFunding": 0,
-      "hasRelatedWorks": 90,
+      "hasRelatedWorks": 83.3,
       "hasVersion": 13.3,
       "hasLanguage": 6.7,
       "hasPublisher": 100
@@ -186,8 +186,8 @@
   {
     "year": 2011,
     "count": 132,
-    "avgCompleteness": 36.1,
-    "dcCompleteness": 36.1,
+    "avgCompleteness": 31.7,
+    "dcCompleteness": 31.7,
     "anidCompleteness": null,
     "bySource": {
       "DataCite": 132,
@@ -195,12 +195,12 @@
     },
     "fields": {
       "hasOrcid": 0,
-      "hasLicense": 47,
-      "hasOpenLicense": 10.6,
+      "hasLicense": 10.6,
+      "hasOpenLicense": 9.8,
       "hasSubjects": 43.2,
       "hasDescription": 53,
       "hasFunding": 0,
-      "hasRelatedWorks": 94.7,
+      "hasRelatedWorks": 87.9,
       "hasVersion": 8.3,
       "hasLanguage": 4.5,
       "hasPublisher": 100
@@ -209,8 +209,8 @@
   {
     "year": 2012,
     "count": 95,
-    "avgCompleteness": 39.8,
-    "dcCompleteness": 39.8,
+    "avgCompleteness": 36.3,
+    "dcCompleteness": 36.3,
     "anidCompleteness": null,
     "bySource": {
       "DataCite": 95,
@@ -218,12 +218,12 @@
     },
     "fields": {
       "hasOrcid": 3.2,
-      "hasLicense": 53.7,
+      "hasLicense": 24.2,
       "hasOpenLicense": 11.6,
       "hasSubjects": 52.6,
       "hasDescription": 54.7,
       "hasFunding": 0,
-      "hasRelatedWorks": 96.8,
+      "hasRelatedWorks": 91.6,
       "hasVersion": 13.7,
       "hasLanguage": 11.6,
       "hasPublisher": 100
@@ -232,17 +232,17 @@
   {
     "year": 2013,
     "count": 65,
-    "avgCompleteness": 52.5,
-    "dcCompleteness": 52.7,
-    "anidCompleteness": 40,
+    "avgCompleteness": 45.5,
+    "dcCompleteness": 45.8,
+    "anidCompleteness": 30,
     "bySource": {
       "DataCite": 64,
       "ANID": 1
     },
     "fields": {
       "hasOrcid": 0,
-      "hasLicense": 98.5,
-      "hasOpenLicense": 20,
+      "hasLicense": 30.8,
+      "hasOpenLicense": 18.5,
       "hasSubjects": 98.5,
       "hasDescription": 96.9,
       "hasFunding": 0,
@@ -255,21 +255,21 @@
   {
     "year": 2014,
     "count": 113,
-    "avgCompleteness": 55.8,
-    "dcCompleteness": 56.1,
-    "anidCompleteness": 40,
+    "avgCompleteness": 50.4,
+    "dcCompleteness": 50.8,
+    "anidCompleteness": 30,
     "bySource": {
       "DataCite": 111,
       "ANID": 2
     },
     "fields": {
       "hasOrcid": 2.7,
-      "hasLicense": 97.3,
-      "hasOpenLicense": 40.7,
+      "hasLicense": 47.8,
+      "hasOpenLicense": 38.9,
       "hasSubjects": 95.6,
       "hasDescription": 96.5,
       "hasFunding": 0.9,
-      "hasRelatedWorks": 93.8,
+      "hasRelatedWorks": 91.2,
       "hasVersion": 15.9,
       "hasLanguage": 16.8,
       "hasPublisher": 98.2
@@ -278,8 +278,8 @@
   {
     "year": 2015,
     "count": 90,
-    "avgCompleteness": 59.1,
-    "dcCompleteness": 59.1,
+    "avgCompleteness": 58.8,
+    "dcCompleteness": 58.8,
     "anidCompleteness": null,
     "bySource": {
       "DataCite": 90,
@@ -288,11 +288,11 @@
     "fields": {
       "hasOrcid": 2.2,
       "hasLicense": 93.3,
-      "hasOpenLicense": 62.2,
+      "hasOpenLicense": 61.1,
       "hasSubjects": 95.6,
       "hasDescription": 98.9,
       "hasFunding": 4.4,
-      "hasRelatedWorks": 94.4,
+      "hasRelatedWorks": 92.2,
       "hasVersion": 21.1,
       "hasLanguage": 18.9,
       "hasPublisher": 100
@@ -301,21 +301,21 @@
   {
     "year": 2016,
     "count": 288,
-    "avgCompleteness": 46,
-    "dcCompleteness": 60.5,
-    "anidCompleteness": 38.5,
+    "avgCompleteness": 45.2,
+    "dcCompleteness": 58.7,
+    "anidCompleteness": 38.2,
     "bySource": {
       "DataCite": 99,
       "ANID": 189
     },
     "fields": {
       "hasOrcid": 2.8,
-      "hasLicense": 99.3,
-      "hasOpenLicense": 30.2,
+      "hasLicense": 99,
+      "hasOpenLicense": 25,
       "hasSubjects": 32.3,
       "hasDescription": 86.8,
       "hasFunding": 0.3,
-      "hasRelatedWorks": 96.2,
+      "hasRelatedWorks": 93.8,
       "hasVersion": 6.6,
       "hasLanguage": 71.5,
       "hasPublisher": 34.4
@@ -324,21 +324,21 @@
   {
     "year": 2017,
     "count": 246,
-    "avgCompleteness": 61.4,
-    "dcCompleteness": 61.7,
-    "anidCompleteness": 50,
+    "avgCompleteness": 59.3,
+    "dcCompleteness": 59.8,
+    "anidCompleteness": 40,
     "bySource": {
       "DataCite": 240,
       "ANID": 6
     },
     "fields": {
       "hasOrcid": 9.3,
-      "hasLicense": 99.6,
-      "hasOpenLicense": 76.8,
+      "hasLicense": 97.2,
+      "hasOpenLicense": 70.7,
       "hasSubjects": 92.7,
       "hasDescription": 95.5,
       "hasFunding": 1.2,
-      "hasRelatedWorks": 97.2,
+      "hasRelatedWorks": 85.4,
       "hasVersion": 23.2,
       "hasLanguage": 20.7,
       "hasPublisher": 97.6
@@ -347,21 +347,21 @@
   {
     "year": 2018,
     "count": 353,
-    "avgCompleteness": 51.5,
-    "dcCompleteness": 51.5,
-    "anidCompleteness": 50,
+    "avgCompleteness": 46.7,
+    "dcCompleteness": 46.8,
+    "anidCompleteness": 42.5,
     "bySource": {
       "DataCite": 349,
       "ANID": 4
     },
     "fields": {
       "hasOrcid": 36,
-      "hasLicense": 71.7,
-      "hasOpenLicense": 44.5,
+      "hasLicense": 60.1,
+      "hasOpenLicense": 43.1,
       "hasSubjects": 64.6,
       "hasDescription": 67.4,
       "hasFunding": 3.1,
-      "hasRelatedWorks": 99.2,
+      "hasRelatedWorks": 64.6,
       "hasVersion": 14.4,
       "hasLanguage": 15.3,
       "hasPublisher": 98.9
@@ -370,21 +370,21 @@
   {
     "year": 2019,
     "count": 484,
-    "avgCompleteness": 49.9,
-    "dcCompleteness": 49.9,
-    "anidCompleteness": 50,
+    "avgCompleteness": 47.2,
+    "dcCompleteness": 47.3,
+    "anidCompleteness": 40,
     "bySource": {
       "DataCite": 480,
       "ANID": 4
     },
     "fields": {
       "hasOrcid": 45.7,
-      "hasLicense": 65.7,
-      "hasOpenLicense": 53.7,
+      "hasLicense": 61,
+      "hasOpenLicense": 52.7,
       "hasSubjects": 53.3,
       "hasDescription": 57.9,
       "hasFunding": 1.7,
-      "hasRelatedWorks": 96.5,
+      "hasRelatedWorks": 75,
       "hasVersion": 11.6,
       "hasLanguage": 14.3,
       "hasPublisher": 99.2
@@ -393,21 +393,21 @@
   {
     "year": 2020,
     "count": 1060,
-    "avgCompleteness": 56.9,
-    "dcCompleteness": 56.9,
-    "anidCompleteness": 50,
+    "avgCompleteness": 52.3,
+    "dcCompleteness": 52.4,
+    "anidCompleteness": 41.1,
     "bySource": {
       "DataCite": 1051,
       "ANID": 9
     },
     "fields": {
       "hasOrcid": 45.8,
-      "hasLicense": 85.8,
-      "hasOpenLicense": 60.3,
+      "hasLicense": 67.9,
+      "hasOpenLicense": 59.2,
       "hasSubjects": 74.6,
       "hasDescription": 77.4,
       "hasFunding": 2.8,
-      "hasRelatedWorks": 96.2,
+      "hasRelatedWorks": 69.2,
       "hasVersion": 12,
       "hasLanguage": 14.5,
       "hasPublisher": 99.2
@@ -416,21 +416,21 @@
   {
     "year": 2021,
     "count": 1451,
-    "avgCompleteness": 57.1,
-    "dcCompleteness": 57.4,
-    "anidCompleteness": 52.6,
+    "avgCompleteness": 49.9,
+    "dcCompleteness": 50.2,
+    "anidCompleteness": 44.3,
     "bySource": {
       "DataCite": 1381,
       "ANID": 70
     },
     "fields": {
       "hasOrcid": 62,
-      "hasLicense": 97.9,
-      "hasOpenLicense": 69.3,
+      "hasLicense": 75.1,
+      "hasOpenLicense": 65.6,
       "hasSubjects": 58,
       "hasDescription": 60,
       "hasFunding": 3.6,
-      "hasRelatedWorks": 95.7,
+      "hasRelatedWorks": 49.6,
       "hasVersion": 14.1,
       "hasLanguage": 15.8,
       "hasPublisher": 95.2
@@ -439,21 +439,21 @@
   {
     "year": 2022,
     "count": 1100,
-    "avgCompleteness": 60,
-    "dcCompleteness": 61.9,
-    "anidCompleteness": 24.7,
+    "avgCompleteness": 55.1,
+    "dcCompleteness": 57,
+    "anidCompleteness": 21.4,
     "bySource": {
       "DataCite": 1043,
       "ANID": 57
     },
     "fields": {
       "hasOrcid": 49,
-      "hasLicense": 93.8,
-      "hasOpenLicense": 74.3,
+      "hasLicense": 78.3,
+      "hasOpenLicense": 70.5,
       "hasSubjects": 75.8,
       "hasDescription": 78.6,
       "hasFunding": 5.5,
-      "hasRelatedWorks": 89.7,
+      "hasRelatedWorks": 60.9,
       "hasVersion": 17.6,
       "hasLanguage": 20.3,
       "hasPublisher": 94.8
@@ -462,21 +462,21 @@
   {
     "year": 2023,
     "count": 2188,
-    "avgCompleteness": 51.2,
-    "dcCompleteness": 53,
-    "anidCompleteness": 24.5,
+    "avgCompleteness": 45.4,
+    "dcCompleteness": 47.1,
+    "anidCompleteness": 21.1,
     "bySource": {
       "DataCite": 2049,
       "ANID": 139
     },
     "fields": {
       "hasOrcid": 44.8,
-      "hasLicense": 87.2,
-      "hasOpenLicense": 65.4,
+      "hasLicense": 79.8,
+      "hasOpenLicense": 62.8,
       "hasSubjects": 49.6,
       "hasDescription": 55.6,
       "hasFunding": 4.3,
-      "hasRelatedWorks": 89.9,
+      "hasRelatedWorks": 42,
       "hasVersion": 10.5,
       "hasLanguage": 11.3,
       "hasPublisher": 93.6
@@ -485,21 +485,21 @@
   {
     "year": 2024,
     "count": 2400,
-    "avgCompleteness": 53,
-    "dcCompleteness": 54.5,
-    "anidCompleteness": 28.6,
+    "avgCompleteness": 49.1,
+    "dcCompleteness": 50.6,
+    "anidCompleteness": 24.1,
     "bySource": {
       "DataCite": 2262,
       "ANID": 138
     },
     "fields": {
       "hasOrcid": 65.3,
-      "hasLicense": 76.1,
-      "hasOpenLicense": 53.9,
+      "hasLicense": 74.4,
+      "hasOpenLicense": 52.2,
       "hasSubjects": 60.8,
       "hasDescription": 68.5,
       "hasFunding": 7.6,
-      "hasRelatedWorks": 79.2,
+      "hasRelatedWorks": 43.6,
       "hasVersion": 6.5,
       "hasLanguage": 16,
       "hasPublisher": 95.9
@@ -508,9 +508,9 @@
   {
     "year": 2025,
     "count": 4665,
-    "avgCompleteness": 38,
-    "dcCompleteness": 38.5,
-    "anidCompleteness": 16.8,
+    "avgCompleteness": 29.9,
+    "dcCompleteness": 30.2,
+    "anidCompleteness": 16.5,
     "bySource": {
       "DataCite": 4556,
       "ANID": 109
@@ -518,11 +518,11 @@
     "fields": {
       "hasOrcid": 89,
       "hasLicense": 22.4,
-      "hasOpenLicense": 18.1,
+      "hasOpenLicense": 17.8,
       "hasSubjects": 18,
       "hasDescription": 21.9,
       "hasFunding": 4.1,
-      "hasRelatedWorks": 95.8,
+      "hasRelatedWorks": 15,
       "hasVersion": 8.6,
       "hasLanguage": 4.7,
       "hasPublisher": 97.7
@@ -531,9 +531,9 @@
   {
     "year": 2026,
     "count": 449,
-    "avgCompleteness": 57.1,
-    "dcCompleteness": 59.6,
-    "anidCompleteness": 18.1,
+    "avgCompleteness": 51.6,
+    "dcCompleteness": 53.9,
+    "anidCompleteness": 15.9,
     "bySource": {
       "DataCite": 422,
       "ANID": 27
@@ -541,11 +541,11 @@
     "fields": {
       "hasOrcid": 63.7,
       "hasLicense": 75.5,
-      "hasOpenLicense": 67.7,
+      "hasOpenLicense": 64.4,
       "hasSubjects": 50.8,
       "hasDescription": 64.4,
       "hasFunding": 12.9,
-      "hasRelatedWorks": 84.2,
+      "hasRelatedWorks": 32.3,
       "hasVersion": 39.6,
       "hasLanguage": 18.5,
       "hasPublisher": 94

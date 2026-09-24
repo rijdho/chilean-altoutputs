@@ -9,6 +9,7 @@
  */
 
 import { isOrcid, isOrcidId } from "./pids.mjs";
+import { isLicenceText, isOpenLicence, isOtherWork } from "./rules.mjs";
 
 // ── Helpers ─────────────────────────────────────────────────────────────────
 
@@ -43,26 +44,6 @@ function dimVals(dimFields, schema, element, qualifier) {
     .filter(Boolean);
 }
 
-// ── Open license patterns ───────────────────────────────────────────────────
-
-const OPEN_LICENSE_PATTERNS = [
-  /creative\s*commons/i,
-  /\bCC[\s-]?BY\b/i,
-  /\bCC[\s-]?0\b/i,
-  /\bCC0\b/i,
-  /\bMIT\b/,
-  /\bGPL\b/i,
-  /\bApache\b/i,
-  /\bBSD\b/i,
-  /creativecommons\.org/i,
-  /opensource\.org/i,
-  /spdx\.org/i,
-];
-
-function isOpenLicense(text) {
-  if (!text || typeof text !== "string") return false;
-  return OPEN_LICENSE_PATTERNS.some((rx) => rx.test(text));
-}
 
 // ── Field definitions ───────────────────────────────────────────────────────
 
@@ -88,35 +69,37 @@ export const FIELDS = [
   {
     id: "hasLicense",
     label: "License",
-    description: "Rights or license information specified",
+    description: "A licence or terms of use in the rights field (access statements such as Open Access or Restricted Access do not count)",
     checkDataCite: (rec) => {
       const rights = rec.rightsList || [];
       return rights.some(
         (r) =>
-          hasNonEmpty(r.rights) ||
-          hasNonEmpty(r.rightsUri) ||
-          hasNonEmpty(r.rightsIdentifier),
+          isLicenceText(r.rights) ||
+          isLicenceText(r.rightsUri) ||
+          isLicenceText(r.rightsIdentifier),
       );
     },
     checkANID: (dimFields) => {
-      const rights = dimVals(dimFields, "dc", "rights");
-      const license = dimVals(dimFields, "dc", "rights", "license");
-      const uri = dimVals(dimFields, "dc", "rights", "uri");
-      return rights.length > 0 || license.length > 0 || uri.length > 0;
+      const values = [
+        ...dimVals(dimFields, "dc", "rights"),
+        ...dimVals(dimFields, "dc", "rights", "license"),
+        ...dimVals(dimFields, "dc", "rights", "uri"),
+      ];
+      return values.some((v) => isLicenceText(v));
     },
   },
 
   {
     id: "hasOpenLicense",
     label: "Open License",
-    description: "CC-BY, CC0, MIT, GPL, Apache, or BSD license",
+    description: "An open licence: CC BY, CC BY-SA, CC0 or an OSI software licence (NonCommercial and NoDerivatives do not count)",
     checkDataCite: (rec) => {
       const rights = rec.rightsList || [];
       return rights.some(
         (r) =>
-          isOpenLicense(r.rights) ||
-          isOpenLicense(r.rightsUri) ||
-          isOpenLicense(r.rightsIdentifier),
+          isOpenLicence(r.rights) ||
+          isOpenLicence(r.rightsUri) ||
+          isOpenLicence(r.rightsIdentifier),
       );
     },
     checkANID: (dimFields) => {
@@ -125,7 +108,7 @@ export const FIELDS = [
         ...dimVals(dimFields, "dc", "rights", "license"),
         ...dimVals(dimFields, "dc", "rights", "uri"),
       ];
-      return allRights.some((v) => isOpenLicense(v));
+      return allRights.some((v) => isOpenLicence(v));
     },
   },
 
@@ -194,10 +177,10 @@ export const FIELDS = [
   {
     id: "hasRelatedWorks",
     label: "Related Identifiers",
-    description: "Related identifiers (DOI links to other works)",
+    description: "A link to another work (links to the record's own files or versions do not count)",
     checkDataCite: (rec) => {
       const related = rec.relatedIdentifiers || [];
-      return related.some((r) => hasNonEmpty(r.relatedIdentifier));
+      return related.some((r) => isOtherWork(r, rec.doi));
     },
     checkANID: (dimFields) => {
       const relations = dimVals(dimFields, "dc", "relation");
@@ -208,13 +191,11 @@ export const FIELDS = [
         "relation",
         "isreferencedby",
       );
-      const hasVersion = dimVals(dimFields, "dc", "relation", "hasversion");
       const uri = dimVals(dimFields, "dc", "relation", "uri");
       return (
         relations.length > 0 ||
         isPartOf.length > 0 ||
         isReferencedBy.length > 0 ||
-        hasVersion.length > 0 ||
         uri.length > 0
       );
     },

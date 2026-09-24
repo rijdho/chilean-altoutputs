@@ -1,9 +1,9 @@
 {
   "total": 15310,
-  "withLicense": 10062,
-  "withLicensePct": 65.7,
-  "openLicense": 7208,
-  "openLicensePct": 47.1,
+  "withLicense": 8861,
+  "withLicensePct": 57.9,
+  "openLicense": 6928,
+  "openLicensePct": 45.3,
   "distribution": [
     {
       "name": "No license",
