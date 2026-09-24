@@ -12,7 +12,7 @@ export default {
   'tab.about': 'About',
 
   'footer.by': 'By [Ricardo Hartley Belmar](https://rijdho.github.io) (ORCID [0000-0001-5058-9309](https://orcid.org/0000-0001-5058-9309))',
-  'footer.license': 'Code under MIT, data under CC BY 4.0',
+  'footer.license': 'Code under Apache-2.0, data under CC BY 4.0',
   'footer.source': '[Source on GitHub](https://github.com/rijdho/chilean-altoutputs)',
   'footer.family': 'Part of [Metaudits](https://rijdho.github.io/metaudits-home/)',
 

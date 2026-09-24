@@ -1,0 +1,10 @@
+chilean-altoutputs
+Copyright 2026 Ricardo Hartley Belmar (ORCID 0000-0001-5058-9309)
+
+The code is licensed under the Apache License, Version 2.0 (LICENSE).
+
+The aggregated data in data/dashboard/ is licensed separately under the Creative Commons
+Attribution 4.0 International License (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/
+It is derived from public metadata in DataCite (CC0) and in ANID's repository.
+
+web/src/house/fonts/: Inter, by Rasmus Andersson, under the SIL Open Font License 1.1.

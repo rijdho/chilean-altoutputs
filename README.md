@@ -72,9 +72,11 @@ ORCID rule (10 of 15,310 records changed verdict). 15,310 records, 49.2% average
 
 ## License
 
-Code: [MIT](LICENSE). The aggregated data in `data/dashboard/`:
+Code: [Apache-2.0](LICENSE), copyright 2026 Ricardo Hartley Belmar. The aggregated data in `data/dashboard/`:
 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). It is derived from public metadata in
-DataCite (CC0) and in ANID's repository.
+DataCite (CC0) and in ANID's repository. [`NOTICE`](NOTICE) carries both, and the font's licence;
+a derivative keeps it. Until 2026-09-24 the code was under MIT, and a copy taken then keeps
+those terms.
 
 By [Ricardo Hartley Belmar](https://rijdho.github.io) (ORCID
 [0000-0001-5058-9309](https://orcid.org/0000-0001-5058-9309)).
