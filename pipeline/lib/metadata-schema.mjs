@@ -4,8 +4,8 @@
  * 10 fields evaluated on both DataCite and ANID records.
  * Each field has:
  *   - id, label, description
- *   - checkDataCite(record)  — evaluates a DataCite attributes object
- *   - checkANID(dimFields)   — evaluates an array of parsed DIM fields
+ *   - checkDataCite(record) : evaluates a DataCite attributes object
+ *   - checkANID(dimFields)  : evaluates an array of parsed DIM fields
  */
 
 import { isOrcid, isOrcidId } from "./pids.mjs";

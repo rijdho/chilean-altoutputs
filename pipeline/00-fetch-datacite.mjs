@@ -65,11 +65,11 @@ async function main() {
     const count = counts[type];
     if (count === 0) {
       summary.types[type] = { estimated: 0, fetched: 0 };
-      console.log(`  [SKIP] ${type} — 0 DOIs`);
+      console.log(`  [SKIP] ${type}: 0 DOIs`);
       continue;
     }
 
-    console.log(`\n  [FETCH] ${type} — ${count.toLocaleString()} estimated`);
+    console.log(`\n  [FETCH] ${type}: ${count.toLocaleString()} estimated`);
     const records = [];
 
     try {

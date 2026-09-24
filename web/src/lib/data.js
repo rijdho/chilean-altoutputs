@@ -1,5 +1,5 @@
 /**
- * Data loader — imports pre-generated dashboard JSONs.
+ * Data loader: imports pre-generated dashboard JSONs.
  * In production these are bundled as static assets via Vite.
  */
 

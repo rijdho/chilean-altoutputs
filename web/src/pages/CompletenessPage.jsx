@@ -4,6 +4,7 @@ import Card from '../components/shared/Card';
 import TypeFilter from '../components/shared/TypeFilter';
 import EmptyState from '../components/shared/EmptyState';
 import RecordsList from '../components/shared/RecordsList';
+import { useI18n } from '../i18n/index.jsx';
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
   ResponsiveContainer, LineChart, Line,
@@ -17,6 +18,7 @@ const tooltipStyle = {
 };
 
 export default function CompletenessPage() {
+  const { t, n, field } = useI18n();
   const [selectedType, setSelectedType] = useState('All');
 
   const [clickedYear, setClickedYear] = useState(null);
@@ -32,8 +34,8 @@ export default function CompletenessPage() {
         const meta = fields.find(f => f.id === id);
         const bySrc = typeData.fieldsBySource?.[id] ?? {};
         return {
-          field: meta?.label ?? id,
-          description: meta?.description ?? '',
+          field: field(id, 'label', meta?.label ?? id),
+          description: field(id, 'desc', meta?.description ?? ''),
           pct,
           DataCite: bySrc.DataCite ?? 0,
           ANID: bySrc.ANID ?? 0,
@@ -41,8 +43,8 @@ export default function CompletenessPage() {
         };
       }).sort((a, b) => b.pct - a.pct)
     : fields.map(f => ({
-        field: f.label,
-        description: f.description,
+        field: field(f.id, 'label', f.label),
+        description: field(f.id, 'desc', f.description),
         pct: f.pct,
         DataCite: f.bySource?.DataCite ?? 0,
         ANID: f.bySource?.ANID ?? 0,
@@ -59,12 +61,12 @@ export default function CompletenessPage() {
     <div className="space-y-6 animate-fade-in">
       <div>
         <h1 className="text-xl font-bold" style={{ color: 'var(--color-text)' }}>
-          Metadata Completeness
+          {t('compl.title')}
         </h1>
         <p className="text-sm mt-1" style={{ color: 'var(--color-text2)' }}>
           {selectedType === 'All'
-            ? 'Per-field completeness across all Chilean non-article research outputs.'
-            : `Per-field completeness for ${selectedType} (${typeData?.count ?? 0} records, ${typeData?.avgCompleteness ?? 0}% avg).`}
+            ? t('compl.subAll')
+            : t('compl.subType', { type: selectedType, n: n(typeData?.count ?? 0), pct: n(typeData?.avgCompleteness ?? 0) })}
         </p>
       </div>
 
@@ -74,7 +76,7 @@ export default function CompletenessPage() {
       </Card>
 
       {/* ── DataCite vs ANID ─────────────────────────────────────── */}
-      <Card title={`Completeness by Source${selectedType !== 'All' ? `: ${selectedType}` : ''}`}>
+      <Card title={selectedType === 'All' ? t('compl.cardBySource') : t('compl.cardBySourceType', { type: selectedType })}>
         {fieldData.length > 0 ? (
           <ResponsiveContainer width="100%" height={Math.max(350, fieldData.length * 34)}>
             <BarChart data={fieldData} layout="vertical" barGap={2}>
@@ -94,7 +96,7 @@ export default function CompletenessPage() {
                         {d.ANID != null && <span style={{ color: 'var(--color-tier2)' }}> | ANID: {d.ANID}%</span>}
                       </div>
                       <div style={{ color: 'var(--color-text2)' }}>
-                        {(d.count ?? 0).toLocaleString()} records
+                        {t('common.records', { n: n(d.count ?? 0) })}
                       </div>
                     </div>
                   );
@@ -112,12 +114,12 @@ export default function CompletenessPage() {
 
       {/* ── By resource type (only when All) ──────────────────────── */}
       {selectedType === 'All' && topTypes.length > 0 && (
-        <Card title="Completeness by Resource Type">
+        <Card title={t('compl.cardByResType')}>
           <div className="overflow-x-auto">
             <table className="w-full text-xs">
               <thead>
                 <tr style={{ color: 'var(--color-text2)' }}>
-                  <th className="text-left p-2">Field</th>
+                  <th className="text-left p-2">{t('th.field')}</th>
                   {topTypes.map(t => (
                     <th key={t.type} className="text-right p-2">{t.type}</th>
                   ))}
@@ -126,7 +128,7 @@ export default function CompletenessPage() {
               <tbody>
                 {fields.map(f => (
                   <tr key={f.id} className="border-t" style={{ borderColor: 'var(--color-border)' }}>
-                    <td className="p-2 font-medium" style={{ color: 'var(--color-text)' }}>{f.label}</td>
+                    <td className="p-2 font-medium" style={{ color: 'var(--color-text)' }}>{field(f.id, 'label', f.label)}</td>
                     {topTypes.map(t => {
                       const val = f.byType?.[t.type] ?? 0;
                       return (
@@ -140,7 +142,7 @@ export default function CompletenessPage() {
                   </tr>
                 ))}
                 <tr className="border-t font-bold" style={{ borderColor: 'var(--color-border)' }}>
-                  <td className="p-2" style={{ color: 'var(--color-text)' }}>Average</td>
+                  <td className="p-2" style={{ color: 'var(--color-text)' }}>{t('common.average')}</td>
                   {topTypes.map(t => (
                     <td key={t.type} className="p-2 text-right font-mono" style={{ color: 'var(--color-accent)' }}>
                       {t.avgCompleteness}%
@@ -154,18 +156,18 @@ export default function CompletenessPage() {
       )}
 
       {/* ── Field detail table ────────────────────────────────────── */}
-      <Card title="Field Detail">
+      <Card title={t('compl.cardDetail')}>
         {fieldData.length > 0 ? (
           <div className="overflow-x-auto">
             <table className="w-full text-xs">
               <thead>
                 <tr style={{ color: 'var(--color-text2)' }}>
-                  <th className="text-left p-2">Field</th>
-                  <th className="text-right p-2">Overall</th>
+                  <th className="text-left p-2">{t('th.field')}</th>
+                  <th className="text-right p-2">{t('th.overall')}</th>
                   <th className="text-right p-2">DataCite</th>
                   <th className="text-right p-2">ANID</th>
-                  <th className="text-right p-2">Records</th>
-                  <th className="text-left p-2">Description</th>
+                  <th className="text-right p-2">{t('th.records')}</th>
+                  <th className="text-left p-2">{t('th.description')}</th>
                 </tr>
               </thead>
               <tbody>
@@ -180,7 +182,7 @@ export default function CompletenessPage() {
                       {f.ANID != null ? `${f.ANID}%` : '--'}
                     </td>
                     <td className="p-2 text-right font-mono" style={{ color: 'var(--color-text2)' }}>
-                      {f.count?.toLocaleString()}
+                      {n(f.count)}
                     </td>
                     <td className="p-2" style={{ color: 'var(--color-text2)' }}>{f.description}</td>
                   </tr>
@@ -195,7 +197,7 @@ export default function CompletenessPage() {
 
       {/* ── Trend + Volume by year ────────────────────────────────── */}
       <div className="grid md:grid-cols-2 gap-4">
-        <Card title={`Completeness Trend${selectedType !== 'All' ? `: ${selectedType}` : ''}`}>
+        <Card title={selectedType === 'All' ? t('compl.cardTrend') : t('compl.cardTrendType', { type: selectedType })}>
           {yearlyData.length > 0 ? (
             <ResponsiveContainer width="100%" height={300}>
               <LineChart data={yearlyData}
@@ -218,10 +220,10 @@ export default function CompletenessPage() {
           )}
         </Card>
 
-        <Card title={`Records by Year${selectedType !== 'All' ? `: ${selectedType}` : ''}`}>
+        <Card title={selectedType === 'All' ? t('compl.cardByYear') : t('compl.cardByYearType', { type: selectedType })}>
           {yearlyData.length > 0 ? (
             <>
-              <p className="text-xs mb-2" style={{ color: 'var(--color-text2)' }}>Click a year to see records</p>
+              <p className="text-xs mb-2" style={{ color: 'var(--color-text2)' }}>{t('common.clickYear')}</p>
               <ResponsiveContainer width="100%" height={300}>
                 <BarChart data={yearlyData}
                   onClick={(e) => e?.activeLabel && setClickedYear(Number(e.activeLabel))}
@@ -245,7 +247,7 @@ export default function CompletenessPage() {
 
       {clickedYear && (
         <RecordsList
-          title={`Records from ${clickedYear}`}
+          title={t('compl.recordsFrom', { year: clickedYear })}
           filter={r => r.year === clickedYear && (selectedType === 'All' || r.type === selectedType)}
           onClose={() => setClickedYear(null)}
         />

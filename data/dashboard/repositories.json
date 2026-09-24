@@ -1,0 +1,821 @@
+[
+  {
+    "name": "Zenodo",
+    "count": 5872,
+    "pct": 38.4,
+    "avgCompleteness": 61.1,
+    "topTypes": [
+      {
+        "type": "Image",
+        "count": 3765
+      },
+      {
+        "type": "Dataset",
+        "count": 1615
+      },
+      {
+        "type": "Software",
+        "count": 307
+      },
+      {
+        "type": "Other",
+        "count": 121
+      },
+      {
+        "type": "Audiovisual",
+        "count": 38
+      }
+    ],
+    "bySource": {
+      "DataCite": 5872
+    }
+  },
+  {
+    "name": "Repositorio de datos de investigación de la Universidad de Chile",
+    "count": 4393,
+    "pct": 28.7,
+    "avgCompleteness": 33.8,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 4393
+      }
+    ],
+    "bySource": {
+      "DataCite": 4393
+    }
+  },
+  {
+    "name": "figshare",
+    "count": 1032,
+    "pct": 6.7,
+    "avgCompleteness": 61,
+    "topTypes": [
+      {
+        "type": "Collection",
+        "count": 598
+      },
+      {
+        "type": "Image",
+        "count": 237
+      },
+      {
+        "type": "Dataset",
+        "count": 188
+      },
+      {
+        "type": "Audiovisual",
+        "count": 8
+      },
+      {
+        "type": "Other",
+        "count": 1
+      }
+    ],
+    "bySource": {
+      "DataCite": 1032
+    }
+  },
+  {
+    "name": "Harvard Dataverse",
+    "count": 733,
+    "pct": 4.8,
+    "avgCompleteness": 38.5,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 733
+      }
+    ],
+    "bySource": {
+      "DataCite": 733
+    }
+  },
+  {
+    "name": "ANID Repository",
+    "count": 719,
+    "pct": 4.7,
+    "avgCompleteness": 29.8,
+    "topTypes": [
+      {
+        "type": "OutputManagementPlan",
+        "count": 228
+      },
+      {
+        "type": "Dataset",
+        "count": 211
+      },
+      {
+        "type": "Other",
+        "count": 207
+      },
+      {
+        "type": "Audiovisual",
+        "count": 52
+      },
+      {
+        "type": "Image",
+        "count": 13
+      }
+    ],
+    "bySource": {
+      "ANID": 719
+    }
+  },
+  {
+    "name": "Universidad de Chile",
+    "count": 368,
+    "pct": 2.4,
+    "avgCompleteness": 50.1,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 366
+      },
+      {
+        "type": "Other",
+        "count": 2
+      }
+    ],
+    "bySource": {
+      "DataCite": 368
+    }
+  },
+  {
+    "name": "Datos de Investigación UC",
+    "count": 349,
+    "pct": 2.3,
+    "avgCompleteness": 29.3,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 349
+      }
+    ],
+    "bySource": {
+      "DataCite": 310,
+      "ANID": 39
+    }
+  },
+  {
+    "name": "Dryad",
+    "count": 279,
+    "pct": 1.8,
+    "avgCompleteness": 90.1,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 279
+      }
+    ],
+    "bySource": {
+      "DataCite": 279
+    }
+  },
+  {
+    "name": "Environmental Molecular Sciences Laboratory",
+    "count": 192,
+    "pct": 1.3,
+    "avgCompleteness": 30.2,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 192
+      }
+    ],
+    "bySource": {
+      "DataCite": 192
+    }
+  },
+  {
+    "name": "Mendeley Data",
+    "count": 190,
+    "pct": 1.2,
+    "avgCompleteness": 71.7,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 190
+      }
+    ],
+    "bySource": {
+      "DataCite": 190
+    }
+  },
+  {
+    "name": "Plazi.org taxonomic treatments database",
+    "count": 123,
+    "pct": 0.8,
+    "avgCompleteness": 34.4,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 123
+      }
+    ],
+    "bySource": {
+      "DataCite": 123
+    }
+  },
+  {
+    "name": "SciELO Data",
+    "count": 122,
+    "pct": 0.8,
+    "avgCompleteness": 56.6,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 122
+      }
+    ],
+    "bySource": {
+      "DataCite": 122
+    }
+  },
+  {
+    "name": "ICPSR - Interuniversity Consortium for Political and Social Research",
+    "count": 110,
+    "pct": 0.7,
+    "avgCompleteness": 56,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 110
+      }
+    ],
+    "bySource": {
+      "DataCite": 110
+    }
+  },
+  {
+    "name": "Usach",
+    "count": 84,
+    "pct": 0.5,
+    "avgCompleteness": 32.5,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 84
+      }
+    ],
+    "bySource": {
+      "DataCite": 84
+    }
+  },
+  {
+    "name": "Underline Science Inc.",
+    "count": 47,
+    "pct": 0.3,
+    "avgCompleteness": 26.4,
+    "topTypes": [
+      {
+        "type": "Audiovisual",
+        "count": 47
+      }
+    ],
+    "bySource": {
+      "DataCite": 47
+    }
+  },
+  {
+    "name": "GFZ Data Services",
+    "count": 41,
+    "pct": 0.3,
+    "avgCompleteness": 75.4,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 40
+      },
+      {
+        "type": "Software",
+        "count": 1
+      }
+    ],
+    "bySource": {
+      "DataCite": 41
+    }
+  },
+  {
+    "name": "MagnoliaPress via Plazi",
+    "count": 30,
+    "pct": 0.2,
+    "avgCompleteness": 36.7,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 30
+      }
+    ],
+    "bySource": {
+      "DataCite": 30
+    }
+  },
+  {
+    "name": "Recherche Data Gouv",
+    "count": 25,
+    "pct": 0.2,
+    "avgCompleteness": 31.2,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 25
+      }
+    ],
+    "bySource": {
+      "DataCite": 25
+    }
+  },
+  {
+    "name": "Plazi",
+    "count": 24,
+    "pct": 0.2,
+    "avgCompleteness": 35,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 24
+      }
+    ],
+    "bySource": {
+      "DataCite": 24
+    }
+  },
+  {
+    "name": "Repositorio de Datos de Investigación - Universidad Andrés Bello (Chile)",
+    "count": 23,
+    "pct": 0.2,
+    "avgCompleteness": 34.8,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 23
+      }
+    ],
+    "bySource": {
+      "DataCite": 23
+    }
+  },
+  {
+    "name": "Datos para Resiliencia",
+    "count": 22,
+    "pct": 0.1,
+    "avgCompleteness": 20,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 22
+      }
+    ],
+    "bySource": {
+      "DataCite": 22
+    }
+  },
+  {
+    "name": "Materials Cloud",
+    "count": 19,
+    "pct": 0.1,
+    "avgCompleteness": 66.8,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 19
+      }
+    ],
+    "bySource": {
+      "DataCite": 19
+    }
+  },
+  {
+    "name": "Pensoft via Plazi",
+    "count": 17,
+    "pct": 0.1,
+    "avgCompleteness": 38.2,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 17
+      }
+    ],
+    "bySource": {
+      "DataCite": 17
+    }
+  },
+  {
+    "name": "SAGE Journals",
+    "count": 16,
+    "pct": 0.1,
+    "avgCompleteness": 57.5,
+    "topTypes": [
+      {
+        "type": "Collection",
+        "count": 16
+      }
+    ],
+    "bySource": {
+      "DataCite": 16
+    }
+  },
+  {
+    "name": "Rodare",
+    "count": 16,
+    "pct": 0.1,
+    "avgCompleteness": 61.2,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 14
+      },
+      {
+        "type": "Other",
+        "count": 2
+      }
+    ],
+    "bySource": {
+      "DataCite": 16
+    }
+  },
+  {
+    "name": "SciELO journals",
+    "count": 16,
+    "pct": 0.1,
+    "avgCompleteness": 60,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 16
+      }
+    ],
+    "bySource": {
+      "DataCite": 16
+    }
+  },
+  {
+    "name": "GESIS Data Archive",
+    "count": 15,
+    "pct": 0.1,
+    "avgCompleteness": 56.7,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 15
+      }
+    ],
+    "bySource": {
+      "DataCite": 15
+    }
+  },
+  {
+    "name": "International Federation of Digital Seismograph Networks",
+    "count": 15,
+    "pct": 0.1,
+    "avgCompleteness": 34,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 15
+      }
+    ],
+    "bySource": {
+      "DataCite": 15
+    }
+  },
+  {
+    "name": "CIRM",
+    "count": 13,
+    "pct": 0.1,
+    "avgCompleteness": 76.2,
+    "topTypes": [
+      {
+        "type": "Audiovisual",
+        "count": 13
+      }
+    ],
+    "bySource": {
+      "DataCite": 13
+    }
+  },
+  {
+    "name": "World Values Survey",
+    "count": 13,
+    "pct": 0.1,
+    "avgCompleteness": 80,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 13
+      }
+    ],
+    "bySource": {
+      "DataCite": 13
+    }
+  },
+  {
+    "name": "Ministerio del Medio Ambiente de Chile",
+    "count": 13,
+    "pct": 0.1,
+    "avgCompleteness": 59.2,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 13
+      }
+    ],
+    "bySource": {
+      "DataCite": 13
+    }
+  },
+  {
+    "name": "IEEE DataPort",
+    "count": 12,
+    "pct": 0.1,
+    "avgCompleteness": 55,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 12
+      }
+    ],
+    "bySource": {
+      "DataCite": 12
+    }
+  },
+  {
+    "name": "Springer Nature",
+    "count": 12,
+    "pct": 0.1,
+    "avgCompleteness": 60,
+    "topTypes": [
+      {
+        "type": "Image",
+        "count": 8
+      },
+      {
+        "type": "Dataset",
+        "count": 4
+      }
+    ],
+    "bySource": {
+      "DataCite": 12
+    }
+  },
+  {
+    "name": "Volume XX",
+    "count": 11,
+    "pct": 0.1,
+    "avgCompleteness": 57.3,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 11
+      }
+    ],
+    "bySource": {
+      "DataCite": 11
+    }
+  },
+  {
+    "name": "Taylor & Francis",
+    "count": 11,
+    "pct": 0.1,
+    "avgCompleteness": 60,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 11
+      }
+    ],
+    "bySource": {
+      "DataCite": 11
+    }
+  },
+  {
+    "name": "Code Ocean",
+    "count": 11,
+    "pct": 0.1,
+    "avgCompleteness": 70.9,
+    "topTypes": [
+      {
+        "type": "Software",
+        "count": 11
+      }
+    ],
+    "bySource": {
+      "DataCite": 11
+    }
+  },
+  {
+    "name": "NSF NCAR Earth Observing Laboratory",
+    "count": 10,
+    "pct": 0.1,
+    "avgCompleteness": 80,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 10
+      }
+    ],
+    "bySource": {
+      "DataCite": 10
+    }
+  },
+  {
+    "name": "Borealis",
+    "count": 10,
+    "pct": 0.1,
+    "avgCompleteness": 63,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 10
+      }
+    ],
+    "bySource": {
+      "DataCite": 10
+    }
+  },
+  {
+    "name": "Universidad Austral de Chile",
+    "count": 10,
+    "pct": 0.1,
+    "avgCompleteness": 60,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 10
+      }
+    ],
+    "bySource": {
+      "DataCite": 10
+    }
+  },
+  {
+    "name": "PANGAEA",
+    "count": 10,
+    "pct": 0.1,
+    "avgCompleteness": 73,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 10
+      }
+    ],
+    "bySource": {
+      "DataCite": 10
+    }
+  },
+  {
+    "name": "World Values Survey Association",
+    "count": 9,
+    "pct": 0.1,
+    "avgCompleteness": 80,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 9
+      }
+    ],
+    "bySource": {
+      "DataCite": 9
+    }
+  },
+  {
+    "name": "Science Data Bank",
+    "count": 9,
+    "pct": 0.1,
+    "avgCompleteness": 72.2,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 9
+      }
+    ],
+    "bySource": {
+      "DataCite": 9
+    }
+  },
+  {
+    "name": "Journal of Bioinformatics and Genomics",
+    "count": 9,
+    "pct": 0.1,
+    "avgCompleteness": 70,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 6
+      },
+      {
+        "type": "Image",
+        "count": 3
+      }
+    ],
+    "bySource": {
+      "DataCite": 9
+    }
+  },
+  {
+    "name": "Universidad de Los Andes, Chile",
+    "count": 8,
+    "pct": 0.1,
+    "avgCompleteness": 70,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 8
+      }
+    ],
+    "bySource": {
+      "DataCite": 8
+    }
+  },
+  {
+    "name": "ChecklistBank",
+    "count": 8,
+    "pct": 0.1,
+    "avgCompleteness": 30,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 8
+      }
+    ],
+    "bySource": {
+      "DataCite": 8
+    }
+  },
+  {
+    "name": "European Journal of Taxonomy",
+    "count": 8,
+    "pct": 0.1,
+    "avgCompleteness": 31.3,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 8
+      }
+    ],
+    "bySource": {
+      "DataCite": 8
+    }
+  },
+  {
+    "name": "Journal of Applied Econometrics",
+    "count": 7,
+    "pct": 0,
+    "avgCompleteness": 81.4,
+    "topTypes": [
+      {
+        "type": "Collection",
+        "count": 7
+      }
+    ],
+    "bySource": {
+      "DataCite": 7
+    }
+  },
+  {
+    "name": "Portail Data INRAE",
+    "count": 7,
+    "pct": 0,
+    "avgCompleteness": 30,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 7
+      }
+    ],
+    "bySource": {
+      "DataCite": 7
+    }
+  },
+  {
+    "name": "Invasive Species Specialist Group ISSG",
+    "count": 6,
+    "pct": 0,
+    "avgCompleteness": 45,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 6
+      }
+    ],
+    "bySource": {
+      "DataCite": 6
+    }
+  },
+  {
+    "name": "Instituto de Biodiversidad de Ecosistemas Antárticos y Subantárticos (BASE)",
+    "count": 6,
+    "pct": 0,
+    "avgCompleteness": 65,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 6
+      }
+    ],
+    "bySource": {
+      "DataCite": 6
+    }
+  }
+]

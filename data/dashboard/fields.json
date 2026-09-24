@@ -1,0 +1,212 @@
+[
+  {
+    "id": "hasOrcid",
+    "label": "Creator ORCID",
+    "description": "At least one creator has a well-formed ORCID identifier (pattern and check digit)",
+    "pct": 60.8,
+    "count": 9309,
+    "bySource": {
+      "DataCite": 61.8,
+      "ANID": 41.8
+    },
+    "byType": {
+      "Dataset": 72.5,
+      "Image": 35.6,
+      "Collection": 51,
+      "Other": 30.1,
+      "Software": 66.1,
+      "OutputManagementPlan": 100,
+      "Audiovisual": 30.5,
+      "Model": 78.3
+    }
+  },
+  {
+    "id": "hasLicense",
+    "label": "License",
+    "description": "Rights or license information specified",
+    "pct": 65.7,
+    "count": 10062,
+    "bySource": {
+      "DataCite": 66.2,
+      "ANID": 56.6
+    },
+    "byType": {
+      "Dataset": 48.8,
+      "Image": 99.7,
+      "Collection": 100,
+      "Other": 98.8,
+      "Software": 97.9,
+      "OutputManagementPlan": 3.5,
+      "Audiovisual": 39,
+      "Model": 87
+    }
+  },
+  {
+    "id": "hasOpenLicense",
+    "label": "Open License",
+    "description": "CC-BY, CC0, MIT, GPL, Apache, or BSD license",
+    "pct": 47.1,
+    "count": 7208,
+    "bySource": {
+      "DataCite": 48.2,
+      "ANID": 26.4
+    },
+    "byType": {
+      "Dataset": 45,
+      "Image": 43.5,
+      "Collection": 100,
+      "Other": 45,
+      "Software": 83.6,
+      "OutputManagementPlan": 3.5,
+      "Audiovisual": 38.4,
+      "Model": 87
+    }
+  },
+  {
+    "id": "hasSubjects",
+    "label": "Subject Keywords",
+    "description": "Subject or keyword metadata present",
+    "pct": 48.1,
+    "count": 7366,
+    "bySource": {
+      "DataCite": 49.1,
+      "ANID": 28.9
+    },
+    "byType": {
+      "Dataset": 25.6,
+      "Image": 97.9,
+      "Collection": 98.6,
+      "Other": 24,
+      "Software": 44.8,
+      "OutputManagementPlan": 0.9,
+      "Audiovisual": 70.1,
+      "Model": 8.7
+    }
+  },
+  {
+    "id": "hasDescription",
+    "label": "Description",
+    "description": "Non-trivial description (>20 words)",
+    "pct": 53.7,
+    "count": 8228,
+    "bySource": {
+      "DataCite": 53.8,
+      "ANID": 52.5
+    },
+    "byType": {
+      "Dataset": 31.7,
+      "Image": 96.7,
+      "Collection": 100,
+      "Other": 77.2,
+      "Software": 74.5,
+      "OutputManagementPlan": 11.8,
+      "Audiovisual": 78.7,
+      "Model": 43.5
+    }
+  },
+  {
+    "id": "hasFunding",
+    "label": "Funding Info",
+    "description": "Funding or grant information present",
+    "pct": 4.6,
+    "count": 699,
+    "bySource": {
+      "DataCite": 4.8,
+      "ANID": 0
+    },
+    "byType": {
+      "Dataset": 6.9,
+      "Image": 0.3,
+      "Collection": 0,
+      "Other": 2.6,
+      "Software": 5.5,
+      "OutputManagementPlan": 0,
+      "Audiovisual": 2.4,
+      "Model": 0
+    }
+  },
+  {
+    "id": "hasRelatedWorks",
+    "label": "Related Identifiers",
+    "description": "Related identifiers (DOI links to other works)",
+    "pct": 91.6,
+    "count": 14029,
+    "bySource": {
+      "DataCite": 93.7,
+      "ANID": 51.7
+    },
+    "byType": {
+      "Dataset": 92.5,
+      "Image": 99.7,
+      "Collection": 59.8,
+      "Other": 96.8,
+      "Software": 95.8,
+      "OutputManagementPlan": 7.5,
+      "Audiovisual": 64,
+      "Model": 87
+    }
+  },
+  {
+    "id": "hasVersion",
+    "label": "Version",
+    "description": "Version information specified",
+    "pct": 11.5,
+    "count": 1757,
+    "bySource": {
+      "DataCite": 12.1,
+      "ANID": 0
+    },
+    "byType": {
+      "Dataset": 15.4,
+      "Image": 0.6,
+      "Collection": 5.6,
+      "Other": 7.3,
+      "Software": 57.9,
+      "OutputManagementPlan": 0,
+      "Audiovisual": 3.7,
+      "Model": 17.4
+    }
+  },
+  {
+    "id": "hasLanguage",
+    "label": "Language",
+    "description": "Language of the resource specified",
+    "pct": 13.1,
+    "count": 2001,
+    "bySource": {
+      "DataCite": 11.4,
+      "ANID": 45.5
+    },
+    "byType": {
+      "Dataset": 16.1,
+      "Image": 1.5,
+      "Collection": 1.8,
+      "Other": 74.9,
+      "Software": 30.6,
+      "OutputManagementPlan": 0,
+      "Audiovisual": 20.1,
+      "Model": 8.7
+    }
+  },
+  {
+    "id": "hasPublisher",
+    "label": "Publisher / Repository",
+    "description": "Publisher or repository name specified",
+    "pct": 95.3,
+    "count": 14591,
+    "bySource": {
+      "DataCite": 100,
+      "ANID": 5.1
+    },
+    "byType": {
+      "Dataset": 97.8,
+      "Image": 99.7,
+      "Collection": 100,
+      "Other": 39.5,
+      "Software": 97.6,
+      "OutputManagementPlan": 0,
+      "Audiovisual": 68.3,
+      "Model": 100
+    }
+  }
+]

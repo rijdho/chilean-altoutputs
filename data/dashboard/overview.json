@@ -1,0 +1,21 @@
+{
+  "totalRecords": 15310,
+  "bySource": {
+    "DataCite": 14552,
+    "ANID": 758
+  },
+  "byType": {
+    "Audiovisual": 164,
+    "Collection": 627,
+    "Dataset": 9565,
+    "Image": 4029,
+    "Model": 23,
+    "Other": 342,
+    "Software": 330,
+    "Workflow": 2,
+    "OutputManagementPlan": 228
+  },
+  "avgCompleteness": 49.2,
+  "fieldCount": 10,
+  "generatedAt": "2026-09-24T07:43:20.929Z"
+}

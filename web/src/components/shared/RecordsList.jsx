@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
+import { useI18n } from '../../i18n/index.jsx';
 
-/* Lazy-loaded records cache — fetched once, reused */
+/* Lazy-loaded records cache: fetched once, reused */
 let _cache = null;
 let _promise = null;
 
@@ -9,18 +10,11 @@ function loadRecords() {
   if (_promise) return _promise;
   _promise = fetch('./data/records-lite.json')
     .then(r => {
-      // A gated fetch returns the login HTML once the auth cookie expires.
-      const type = r.headers.get('content-type') || '';
-      if (r.status === 401 || r.status === 403 || !type.includes('application/json')) {
-        const e = new Error('Your session expired — reload the page to enter the access key again.');
-        e.code = 'session-expired';
-        throw e;
-      }
       if (!r.ok) throw new Error(`records-lite: HTTP ${r.status}`);
       return r.json();
     })
     .then(data => { _cache = data; return data; });
-  _promise.catch(() => { _promise = null; }); // allow a retry after re-login
+  _promise.catch(() => { _promise = null; }); // allow a retry
   return _promise;
 }
 
@@ -29,6 +23,7 @@ function loadRecords() {
  * Loads records-lite.json lazily on first render.
  */
 export default function RecordsList({ filter, title, onClose, initialSource }) {
+  const { t, n } = useI18n();
   const [sourceFilter, setSourceFilter] = useState(initialSource || 'All');
   const [records, setRecords] = useState(_cache);
   const [loading, setLoading] = useState(!_cache);
@@ -38,7 +33,7 @@ export default function RecordsList({ filter, title, onClose, initialSource }) {
     if (_cache) { setRecords(_cache); setLoading(false); return; }
     loadRecords()
       .then(data => { setRecords(data); setLoading(false); })
-      .catch(err => { setError(err.message); setLoading(false); });
+      .catch(() => { setError(true); setLoading(false); });
   }, []);
 
   if (error) {
@@ -47,8 +42,8 @@ export default function RecordsList({ filter, title, onClose, initialSource }) {
         borderColor: 'var(--color-border)', background: 'var(--color-surface)',
       }}>
         <div className="flex justify-between items-center gap-3">
-          <span className="text-xs" style={{ color: 'var(--color-text2)' }}>{error}</span>
-          <button onClick={() => window.location.reload()} className="text-xs underline cursor-pointer whitespace-nowrap" style={{ color: 'var(--color-accent)' }}>Reload</button>
+          <span className="text-xs" style={{ color: 'var(--color-text2)' }}>{t('common.loadError')}</span>
+          <button onClick={() => window.location.reload()} className="text-xs underline cursor-pointer whitespace-nowrap" style={{ color: 'var(--color-accent)' }}>{t('common.reload')}</button>
         </div>
       </div>
     );
@@ -60,8 +55,8 @@ export default function RecordsList({ filter, title, onClose, initialSource }) {
         borderColor: 'var(--color-border)', background: 'var(--color-surface)',
       }}>
         <div className="flex justify-between items-center">
-          <span className="text-xs" style={{ color: 'var(--color-text2)' }}>Loading records...</span>
-          <button onClick={onClose} className="text-xs underline cursor-pointer" style={{ color: 'var(--color-accent)' }}>Close</button>
+          <span className="text-xs" style={{ color: 'var(--color-text2)' }}>{t('common.loading')}</span>
+          <button onClick={onClose} className="text-xs underline cursor-pointer" style={{ color: 'var(--color-accent)' }}>{t('common.close')}</button>
         </div>
       </div>
     );
@@ -83,14 +78,14 @@ export default function RecordsList({ filter, title, onClose, initialSource }) {
     }}>
       <div className="flex justify-between items-center mb-2">
         <span className="text-xs font-bold" style={{ color: 'var(--color-text)' }}>
-          {title} — {matches.length} records
+          {t('common.listTitle', { title, n: n(matches.length) })}
         </span>
         <button
           onClick={onClose}
           className="text-xs underline cursor-pointer"
           style={{ color: 'var(--color-accent)' }}
         >
-          Close
+          {t('common.close')}
         </button>
       </div>
 
@@ -98,9 +93,9 @@ export default function RecordsList({ filter, title, onClose, initialSource }) {
       {dcCount > 0 && anidCount > 0 && (
         <div className="flex gap-1.5 mb-2">
           {[
-            { key: 'All', label: `All (${baseMatches.length})` },
-            { key: 'DataCite', label: `DataCite (${dcCount})` },
-            { key: 'ANID', label: `ANID (${anidCount})` },
+            { key: 'All', label: `${t('common.all')} (${n(baseMatches.length)})` },
+            { key: 'DataCite', label: `DataCite (${n(dcCount)})` },
+            { key: 'ANID', label: `ANID (${n(anidCount)})` },
           ].map(({ key, label }) => (
             <button
               key={key}
@@ -122,19 +117,19 @@ export default function RecordsList({ filter, title, onClose, initialSource }) {
         <table className="w-full text-xs">
           <thead className="sticky top-0" style={{ background: 'var(--color-surface)' }}>
             <tr style={{ color: 'var(--color-text2)' }}>
-              <th className="text-left p-1">Title</th>
-              <th className="text-left p-1">Type</th>
-              <th className="text-left p-1">Source</th>
-              <th className="text-left p-1">Year</th>
-              <th className="text-left p-1">License</th>
-              <th className="text-left p-1">DOI</th>
+              <th className="text-left p-1">{t('th.title')}</th>
+              <th className="text-left p-1">{t('th.type')}</th>
+              <th className="text-left p-1">{t('th.source')}</th>
+              <th className="text-left p-1">{t('th.year')}</th>
+              <th className="text-left p-1">{t('th.license')}</th>
+              <th className="text-left p-1">{t('th.doi')}</th>
             </tr>
           </thead>
           <tbody>
             {matches.map((r, i) => (
               <tr key={i} className="border-t" style={{ borderColor: 'var(--color-border)' }}>
                 <td className="p-1" style={{ color: 'var(--color-text)', maxWidth: 300 }}>
-                  <span className="line-clamp-1">{r.title || '(untitled)'}</span>
+                  <span className="line-clamp-1">{r.title || t('common.untitled')}</span>
                 </td>
                 <td className="p-1" style={{ color: 'var(--color-text2)' }}>{r.type}</td>
                 <td className="p-1" style={{

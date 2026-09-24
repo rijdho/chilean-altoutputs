@@ -4,8 +4,11 @@ How complete is the metadata of Chilean research outputs that are not articles: 
 software, images, collections, data management plans? This project harvests them from DataCite
 and from ANID's repository, scores each record on ten fields, and shows the result as a dashboard.
 
-Private for now. The dashboard is published, behind a password, as part of the Metadata Audits hub
-at https://metaudits.rijdho.org/chilean-altoutputs/.
+🔗 **Live:** https://rijdho.github.io/chilean-altoutputs/
+
+Available in **English, German and Spanish** (auto-detected, switchable).
+
+Part of the [Metadata Audits](https://metaudits.rijdho.org/) family.
 
 ## What it measures
 
@@ -38,8 +41,11 @@ pipeline/
   02-analyze.mjs          normalise, deduplicate, score the ten fields
   03-aggregate.mjs        write the dashboard JSON
   lib/                    DataCite and OAI clients, the field schema, identifier checks
-web/                      React + Vite + Tailwind + Recharts dashboard
-data/                     not in git (~165 MB): raw harvests, analysed records, dashboard JSON
+web/                      React + Vite + Tailwind + Recharts dashboard, in three languages
+  src/i18n/               en.js (source of truth), es.js, de.js
+  tests/                  catalogues in step; dashboard files consistent
+data/dashboard/           the aggregated results the dashboard reads: the published dataset (CC BY 4.0)
+data/raw/, analyzed.json  not in git (~160 MB): raw harvests and analysed records
 ```
 
 ## Running it
@@ -51,11 +57,9 @@ npm run pipeline:analyze && npm run pipeline:aggregate   # recompute from existi
 cd web && npm run dev
 ```
 
-The dashboard is built and deployed by the hub, not from here:
-
-```bash
-cd ../../rij/metaudits && npm run build:chilean-altoutputs && npm run deploy:quick
-```
+A push to `main` runs the tests, builds `web/` and publishes it to GitHub Pages
+(`.github/workflows/deploy.yml`). The page loads nothing from any other origin: fonts are
+self-hosted, and a Content-Security-Policy in `web/index.html` enforces it.
 
 ## Status
 
@@ -64,4 +68,9 @@ ORCID rule (10 of 15,310 records changed verdict). 15,310 records, 49.2% average
 
 ## License
 
-No licence yet: all rights reserved while the repository is private.
+Code: [MIT](LICENSE). The aggregated data in `data/dashboard/`:
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). It is derived from public metadata in
+DataCite (CC0) and in ANID's repository.
+
+By [Ricardo Hartley Belmar](https://rijdho.github.io) (ORCID
+[0000-0001-5058-9309](https://orcid.org/0000-0001-5058-9309)).

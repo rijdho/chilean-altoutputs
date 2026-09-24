@@ -4,6 +4,7 @@ import KpiCard from '../components/shared/KpiCard';
 import Card from '../components/shared/Card';
 import TypeFilter from '../components/shared/TypeFilter';
 import RecordsList from '../components/shared/RecordsList';
+import { useI18n } from '../i18n/index.jsx';
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
   ResponsiveContainer,
@@ -27,7 +28,6 @@ const shortenLicense = (name) => {
     .replace(' or later', '+');
 };
 
-const fmt = v => typeof v === 'number' ? v.toLocaleString() : v;
 
 const tooltipStyle = {
   backgroundColor: 'var(--color-surface)',
@@ -65,6 +65,8 @@ function computeInstitutions(records) {
 }
 
 export default function OverviewPage() {
+  const { t, n: fmt, field } = useI18n();
+  const licLabel = (l) => (l === 'No license' ? t('common.noLicense') : l === 'Unknown' ? t('common.unknown') : l);
   const [selectedType, setSelectedType] = useState('All');
   const [selectedLicense, setSelectedLicense] = useState(null);
   const [selectedLicenseSource, setSelectedLicenseSource] = useState(null);
@@ -104,7 +106,7 @@ export default function OverviewPage() {
   /* Top repos for selected type */
   const repos = typeData?.repos ?? null;
 
-  /* Top institutions (only for All — per-type not available) */
+  /* Top institutions (only for All: not available per type) */
   const topInstitutions = selectedType === 'All' ? institutions.slice(0, 10) : null;
 
   return (
@@ -112,21 +114,18 @@ export default function OverviewPage() {
       {/* Title */}
       <div>
         <h1 className="text-xl font-bold" style={{ color: 'var(--color-text)' }}>
-          Chilean AltOutputs: Beyond Articles
+          {t('overview.title')}
         </h1>
         <p className="text-sm mt-1" style={{ color: 'var(--color-text2)' }}>
           {hasData
             ? selectedType === 'All'
-              ? `Auditing ${fmt(overview.totalRecords)} non-article research outputs from Chile`
-              : `${selectedType}: ${fmt(totalCount)} records (${avgCompl}% completeness)`
-            : 'Metadata completeness audit of Chilean non-article research outputs'}
+              ? t('overview.subAll', { n: fmt(overview.totalRecords) })
+              : t('overview.subType', { type: selectedType, n: fmt(totalCount), pct: fmt(avgCompl) })
+            : t('overview.subEmpty')}
         </p>
         {selectedType === 'All' && (
           <p className="text-xs mt-2 max-w-2xl" style={{ color: 'var(--color-text2)', opacity: 0.8 }}>
-            Chile's open access policy (ANID, 2022) mandates deposit of publications and research data,
-            but does not mention software or source code. This dashboard audits what actually exists:
-            where Chilean research outputs are deposited, how well they are described, and what metadata
-            gaps prevent discovery and reuse.
+            {t('overview.lede')}
           </p>
         )}
       </div>
@@ -139,37 +138,37 @@ export default function OverviewPage() {
       {/* KPIs */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
         <KpiCard
-          label={selectedType === 'All' ? 'Total Records' : selectedType}
+          label={selectedType === 'All' ? t('overview.kpiTotal') : selectedType}
           value={hasData ? fmt(totalCount) : '--'}
         />
         <KpiCard
           label="DataCite"
           value={hasData ? fmt(dcCount) : '--'}
-          sub="Chilean affiliations"
+          sub={t('overview.kpiDcSub')}
         />
         <KpiCard
           label="ANID"
           value={hasData ? fmt(anidCount) : '--'}
-          sub="OAI-PMH harvest"
+          sub={t('overview.kpiAnidSub')}
         />
         <KpiCard
-          label="Metadata Completeness"
-          value={hasData ? `${avgCompl}%` : '--'}
-          sub="of 10 FAIR fields present"
+          label={t('overview.kpiCompl')}
+          value={hasData ? `${fmt(avgCompl)}%` : '--'}
+          sub={t('overview.kpiComplSub')}
           color={hasData ? 'var(--color-tier1)' : undefined}
         />
       </div>
 
       {/* ── Completeness by field ─────────────────────────────────── */}
-      <Card title={`${selectedType === 'All' ? '' : selectedType + ': '}Metadata Completeness`}>
+      <Card title={selectedType === 'All' ? t('overview.cardCompl') : t('overview.cardComplType', { type: selectedType })}>
         <ResponsiveContainer width="100%" height={300}>
           <BarChart
             data={typeData
               ? Object.entries(typeData.fields).map(([k, v]) => {
                   const meta = fieldsData.find(f => f.id === k);
                   return {
-                    field: meta?.label ?? k.replace('has', '').replace(/([A-Z])/g, ' $1').trim(),
-                    description: meta?.description ?? '',
+                    field: field(k, 'label', meta?.label ?? k),
+                    description: field(k, 'desc', meta?.description ?? ''),
                     DataCite: typeData.fieldsBySource?.[k]?.DataCite ?? v,
                     ANID: typeData.fieldsBySource?.[k]?.ANID ?? null,
                     count: Math.round(v / 100 * typeData.count),
@@ -177,8 +176,8 @@ export default function OverviewPage() {
                   };
                 })
               : fieldsData.map(f => ({
-                  field: f.label,
-                  description: f.description,
+                  field: field(f.id, 'label', f.label),
+                  description: field(f.id, 'desc', f.description),
                   DataCite: f.bySource?.DataCite ?? f.pct,
                   ANID: f.bySource?.ANID ?? null,
                   count: f.count,
@@ -204,7 +203,7 @@ export default function OverviewPage() {
                       {d.ANID != null && <span style={{ color: 'var(--color-tier2)' }}> | ANID: {d.ANID}%</span>}
                     </div>
                     <div style={{ color: 'var(--color-text2)' }}>
-                      {fmt(d.count)} of {fmt(d.total)} records
+                      {t('common.recordsOf', { n: fmt(d.count), total: fmt(d.total) })}
                     </div>
                   </div>
                 );
@@ -221,10 +220,10 @@ export default function OverviewPage() {
       {selectedType === 'All' && (
         <>
           <div className="grid md:grid-cols-2 gap-4">
-            <Card title="Records by Resource Type">
+            <Card title={t('overview.cardByType')}>
               {types.length > 0 ? (
                 <>
-                  <p className="text-xs mb-2" style={{ color: 'var(--color-text2)' }}>Click a bar to see records</p>
+                  <p className="text-xs mb-2" style={{ color: 'var(--color-text2)' }}>{t('common.clickBar')}</p>
                   <ResponsiveContainer width="100%" height={Math.max(250, types.length * 36)}>
                     <BarChart
                       data={types.map(t => ({
@@ -251,7 +250,7 @@ export default function OverviewPage() {
               )}
             </Card>
 
-            <Card title="Avg Completeness by Type">
+            <Card title={t('overview.cardAvgByType')}>
               {types.length > 0 ? (
                 <ResponsiveContainer width="100%" height={Math.max(250, types.length * 36)}>
                   <BarChart
@@ -290,8 +289,8 @@ export default function OverviewPage() {
 
       {/* ── Top repositories (for selected type) ──────────────────── */}
       {repos && (
-        <Card title={`${selectedType}: Top Repositories`}>
-          <p className="text-xs mb-2" style={{ color: 'var(--color-text2)' }}>Click a bar to see records</p>
+        <Card title={t('overview.cardTopRepos', { type: selectedType })}>
+          <p className="text-xs mb-2" style={{ color: 'var(--color-text2)' }}>{t('common.clickBar')}</p>
           <ResponsiveContainer width="100%" height={Math.max(200, repos.length * 28)}>
             <BarChart data={repos} layout="vertical"
               onClick={(e) => e?.activeLabel && setClickedRepo(e.activeLabel)}
@@ -307,12 +306,12 @@ export default function OverviewPage() {
                   return (
                     <div className="text-xs p-2 rounded border" style={tooltipStyle}>
                       <div className="font-bold">{d.name}</div>
-                      <div>{fmt(d.count)} records | {d.avgCompleteness}% completeness</div>
+                      <div>{t('common.recordsPct', { n: fmt(d.count), pct: fmt(d.avgCompleteness) })}</div>
                     </div>
                   );
                 }}
               />
-              <Bar dataKey="count" name="Records" fill="var(--color-accent)" radius={[0, 4, 4, 0]} />
+              <Bar dataKey="count" name={t('series.records')} fill="var(--color-accent)" radius={[0, 4, 4, 0]} />
             </BarChart>
           </ResponsiveContainer>
           {clickedRepo && (
@@ -329,15 +328,15 @@ export default function OverviewPage() {
       <hr style={{ borderColor: 'var(--color-border)' }} />
 
       <div className="grid md:grid-cols-2 gap-4">
-        <Card title={`License Distribution${selectedType !== 'All' ? `: ${selectedType}` : ''}`}>
+        <Card title={selectedType === 'All' ? t('overview.cardLicenses') : t('overview.cardLicensesType', { type: selectedType })}>
           {licenseData.length > 0 ? (
             <>
-              <p className="text-xs mb-2" style={{ color: 'var(--color-text2)' }}>Click a bar to see records</p>
+              <p className="text-xs mb-2" style={{ color: 'var(--color-text2)' }}>{t('common.clickBar')}</p>
               <ResponsiveContainer width="100%" height={Math.max(280, licenseData.length * 28)}>
                 <BarChart data={licenseData} layout="vertical" style={{ cursor: 'pointer' }}>
                   <CartesianGrid strokeDasharray="2 4" stroke="var(--color-border)" strokeOpacity={0.5} />
                   <XAxis type="number" tick={{ fontSize: 11 }} />
-                  <YAxis type="category" dataKey="license" width={130} tick={{ fontSize: 9 }} />
+                  <YAxis type="category" dataKey="license" width={130} tick={{ fontSize: 9 }} tickFormatter={licLabel} />
                   <Tooltip formatter={v => fmt(v)} contentStyle={tooltipStyle} />
                   <Legend />
                   <Bar dataKey="DataCite" name="DataCite" fill="var(--color-accent)" stackId="src"
@@ -355,7 +354,7 @@ export default function OverviewPage() {
         </Card>
 
         {/* Right column: institutions (always) */}
-        <Card title={`Top 10 Institutions${selectedType !== 'All' ? ` (${selectedType})` : ''}`}>
+        <Card title={selectedType === 'All' ? t('overview.cardInstitutions') : t('overview.cardInstitutionsType', { type: selectedType })}>
           {topInstitutions ? (
             <ResponsiveContainer width="100%" height={320}>
               <BarChart data={topInstitutions} layout="vertical" barGap={4}>
@@ -369,7 +368,7 @@ export default function OverviewPage() {
                     return (
                       <div className="text-xs p-2 rounded border" style={tooltipStyle}>
                         <div className="font-bold mb-1">{d.name}</div>
-                        <div>{fmt(d.count)} records</div>
+                        <div>{t('common.records', { n: fmt(d.count) })}</div>
                         {d.topTypes?.map(t => (
                           <div key={t.type} style={{ color: 'var(--color-text2)' }}>{t.type}: {t.count}</div>
                         ))}
@@ -377,7 +376,7 @@ export default function OverviewPage() {
                     );
                   }}
                 />
-                <Bar dataKey="count" name="Records" fill="var(--color-tier2)" radius={[0, 4, 4, 0]} />
+                <Bar dataKey="count" name={t('series.records')} fill="var(--color-tier2)" radius={[0, 4, 4, 0]} />
               </BarChart>
             </ResponsiveContainer>
           ) : (
@@ -398,7 +397,7 @@ export default function OverviewPage() {
       {/* Records list below when license clicked */}
       {selectedLicense && (
         <RecordsList
-          title={selectedLicense}
+          title={licLabel(selectedLicense)}
           filter={r => {
             const lic = shortenLicense(r.license || 'No license');
             return lic === selectedLicense && (selectedType === 'All' || r.type === selectedType);

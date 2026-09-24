@@ -123,7 +123,7 @@ export async function* searchByType(
     if (verbose) {
       const total = json?.meta?.total ?? "?";
       console.log(
-        `  [${resourceType}] page ${page} — ${collected}/${total} collected`,
+        `  [${resourceType}] page ${page}: ${collected}/${total} collected`,
       );
     }
 

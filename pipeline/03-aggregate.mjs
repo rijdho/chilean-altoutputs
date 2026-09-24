@@ -4,13 +4,13 @@
  *
  * Input:  data/analyzed.json
  * Output: data/dashboard/
- *           overview.json       — KPIs, global stats
- *           types.json          — per-type breakdown with completeness
- *           repositories.json   — top repositories with counts + completeness
- *           fields.json         — per-field completeness percentages
- *           licenses.json       — license distribution
- *           yearly.json         — records per year with avg completeness
- *           institutions.json   — top Chilean institutions by output count
+ *           overview.json      : KPIs, global stats
+ *           types.json         : per-type breakdown with completeness
+ *           repositories.json  : top repositories with counts + completeness
+ *           fields.json        : per-field completeness percentages
+ *           licenses.json      : license distribution
+ *           yearly.json        : records per year with avg completeness
+ *           institutions.json  : top Chilean institutions by output count
  *
  * Usage: node pipeline/03-aggregate.mjs
  */
@@ -83,7 +83,7 @@ const overview = {
 write("overview.json", overview);
 
 // ═══════════════════════════════════════════════════════════════════════════════
-//  2. TYPES — per-type breakdown
+//  2. TYPES: per-type breakdown
 // ═══════════════════════════════════════════════════════════════════════════════
 
 const typeStats = Object.entries(byType)
@@ -175,7 +175,7 @@ const typeStats = Object.entries(byType)
 write("types.json", typeStats);
 
 // ═══════════════════════════════════════════════════════════════════════════════
-//  3. REPOSITORIES — top publishers/repos
+//  3. REPOSITORIES: top publishers/repos
 // ═══════════════════════════════════════════════════════════════════════════════
 
 const repoCounts = {};
@@ -210,7 +210,7 @@ const repositories = Object.entries(repoCounts)
 write("repositories.json", repositories);
 
 // ═══════════════════════════════════════════════════════════════════════════════
-//  4. FIELDS — per-field completeness percentages
+//  4. FIELDS: per-field completeness percentages
 // ═══════════════════════════════════════════════════════════════════════════════
 
 const fieldStats = FIELDS.map((field) => {
@@ -253,7 +253,7 @@ const fieldStats = FIELDS.map((field) => {
 write("fields.json", fieldStats);
 
 // ═══════════════════════════════════════════════════════════════════════════════
-//  5. LICENSES — distribution
+//  5. LICENSES: distribution
 // ═══════════════════════════════════════════════════════════════════════════════
 
 // Normalize license names to canonical short forms
@@ -327,7 +327,7 @@ const licensesSummary = {
 write("licenses.json", licensesSummary);
 
 // ═══════════════════════════════════════════════════════════════════════════════
-//  6. YEARLY — records per year + completeness trend
+//  6. YEARLY: records per year + completeness trend
 // ═══════════════════════════════════════════════════════════════════════════════
 
 const byYear = {};
@@ -368,7 +368,7 @@ const yearly = Object.entries(byYear)
 write("yearly.json", yearly);
 
 // ═══════════════════════════════════════════════════════════════════════════════
-//  7. INSTITUTIONS — top Chilean institutions by output count
+//  7. INSTITUTIONS: top Chilean institutions by output count
 // ═══════════════════════════════════════════════════════════════════════════════
 
 // Extract institution names from creator affiliations
@@ -452,7 +452,7 @@ const institutions = Object.entries(instCounts)
 write("institutions.json", institutions);
 
 // ═══════════════════════════════════════════════════════════════════════════════
-//  8. RECORDS-LITE — lightweight index for click-to-explore
+//  8. RECORDS-LITE: lightweight index for click-to-explore
 // ═══════════════════════════════════════════════════════════════════════════════
 
 const recordsLite = records.map((r) => ({

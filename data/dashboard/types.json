@@ -1,0 +1,1861 @@
+[
+  {
+    "type": "Dataset",
+    "count": 9565,
+    "pct": 62.5,
+    "avgCompleteness": 45.2,
+    "fields": {
+      "hasOrcid": 72.5,
+      "hasLicense": 48.8,
+      "hasOpenLicense": 45,
+      "hasSubjects": 25.6,
+      "hasDescription": 31.7,
+      "hasFunding": 6.9,
+      "hasRelatedWorks": 92.5,
+      "hasVersion": 15.4,
+      "hasLanguage": 16.1,
+      "hasPublisher": 97.8
+    },
+    "fieldsBySource": {
+      "hasOrcid": {
+        "DataCite": 73.6,
+        "ANID": 33.2
+      },
+      "hasLicense": {
+        "DataCite": 47.9,
+        "ANID": 81.2
+      },
+      "hasOpenLicense": {
+        "DataCite": 44.5,
+        "ANID": 62.8
+      },
+      "hasSubjects": {
+        "DataCite": 24.4,
+        "ANID": 70
+      },
+      "hasDescription": {
+        "DataCite": 30.9,
+        "ANID": 59.6
+      },
+      "hasFunding": {
+        "DataCite": 7,
+        "ANID": 0
+      },
+      "hasRelatedWorks": {
+        "DataCite": 93.7,
+        "ANID": 49.6
+      },
+      "hasVersion": {
+        "DataCite": 15.8,
+        "ANID": 0
+      },
+      "hasLanguage": {
+        "DataCite": 15.1,
+        "ANID": 52
+      },
+      "hasPublisher": {
+        "DataCite": 100,
+        "ANID": 15.6
+      }
+    },
+    "bySource": {
+      "DataCite": 9315,
+      "ANID": 250
+    },
+    "completenessbySource": {
+      "DataCite": 45.3,
+      "ANID": 42.4
+    },
+    "repos": [
+      {
+        "name": "Repositorio de datos de investigación de la Universidad de Chile",
+        "count": 4393,
+        "avgCompleteness": 33.8
+      },
+      {
+        "name": "Zenodo",
+        "count": 1615,
+        "avgCompleteness": 68.3
+      },
+      {
+        "name": "Harvard Dataverse",
+        "count": 733,
+        "avgCompleteness": 38.5
+      },
+      {
+        "name": "Universidad de Chile",
+        "count": 366,
+        "avgCompleteness": 50.2
+      },
+      {
+        "name": "Datos de Investigación UC",
+        "count": 349,
+        "avgCompleteness": 29.3
+      },
+      {
+        "name": "Dryad",
+        "count": 279,
+        "avgCompleteness": 90.1
+      },
+      {
+        "name": "ANID Repository",
+        "count": 211,
+        "avgCompleteness": 41
+      },
+      {
+        "name": "Environmental Molecular Sciences Laboratory",
+        "count": 192,
+        "avgCompleteness": 30.2
+      },
+      {
+        "name": "Mendeley Data",
+        "count": 190,
+        "avgCompleteness": 71.7
+      },
+      {
+        "name": "figshare",
+        "count": 188,
+        "avgCompleteness": 58.5
+      },
+      {
+        "name": "Plazi.org taxonomic treatments database",
+        "count": 123,
+        "avgCompleteness": 34.4
+      },
+      {
+        "name": "SciELO Data",
+        "count": 122,
+        "avgCompleteness": 56.6
+      },
+      {
+        "name": "ICPSR - Interuniversity Consortium for Political and Social Research",
+        "count": 110,
+        "avgCompleteness": 56
+      },
+      {
+        "name": "Usach",
+        "count": 84,
+        "avgCompleteness": 32.5
+      },
+      {
+        "name": "GFZ Data Services",
+        "count": 40,
+        "avgCompleteness": 75.3
+      }
+    ],
+    "yearly": [
+      {
+        "year": 2002,
+        "count": 6,
+        "avgCompleteness": 60,
+        "bySource": {
+          "DataCite": 6,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2004,
+        "count": 1,
+        "avgCompleteness": 50,
+        "bySource": {
+          "DataCite": 1,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2005,
+        "count": 3,
+        "avgCompleteness": 70,
+        "bySource": {
+          "DataCite": 3,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2007,
+        "count": 8,
+        "avgCompleteness": 40,
+        "bySource": {
+          "DataCite": 8,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2009,
+        "count": 4,
+        "avgCompleteness": 72.5,
+        "bySource": {
+          "DataCite": 3,
+          "ANID": 1
+        }
+      },
+      {
+        "year": 2010,
+        "count": 10,
+        "avgCompleteness": 32,
+        "bySource": {
+          "DataCite": 10,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2011,
+        "count": 79,
+        "avgCompleteness": 26.5,
+        "bySource": {
+          "DataCite": 79,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2012,
+        "count": 55,
+        "avgCompleteness": 32.4,
+        "bySource": {
+          "DataCite": 55,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2013,
+        "count": 10,
+        "avgCompleteness": 63,
+        "bySource": {
+          "DataCite": 10,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2014,
+        "count": 21,
+        "avgCompleteness": 67.6,
+        "bySource": {
+          "DataCite": 21,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2015,
+        "count": 21,
+        "avgCompleteness": 70.5,
+        "bySource": {
+          "DataCite": 21,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2016,
+        "count": 35,
+        "avgCompleteness": 64,
+        "bySource": {
+          "DataCite": 33,
+          "ANID": 2
+        }
+      },
+      {
+        "year": 2017,
+        "count": 75,
+        "avgCompleteness": 71.6,
+        "bySource": {
+          "DataCite": 74,
+          "ANID": 1
+        }
+      },
+      {
+        "year": 2018,
+        "count": 177,
+        "avgCompleteness": 46.9,
+        "bySource": {
+          "DataCite": 177,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2019,
+        "count": 320,
+        "avgCompleteness": 45.4,
+        "bySource": {
+          "DataCite": 319,
+          "ANID": 1
+        }
+      },
+      {
+        "year": 2020,
+        "count": 458,
+        "avgCompleteness": 54.2,
+        "bySource": {
+          "DataCite": 450,
+          "ANID": 8
+        }
+      },
+      {
+        "year": 2021,
+        "count": 841,
+        "avgCompleteness": 56.2,
+        "bySource": {
+          "DataCite": 773,
+          "ANID": 68
+        }
+      },
+      {
+        "year": 2022,
+        "count": 550,
+        "avgCompleteness": 60.8,
+        "bySource": {
+          "DataCite": 500,
+          "ANID": 50
+        }
+      },
+      {
+        "year": 2023,
+        "count": 1276,
+        "avgCompleteness": 48.8,
+        "bySource": {
+          "DataCite": 1234,
+          "ANID": 42
+        }
+      },
+      {
+        "year": 2024,
+        "count": 1239,
+        "avgCompleteness": 49.2,
+        "bySource": {
+          "DataCite": 1175,
+          "ANID": 64
+        }
+      },
+      {
+        "year": 2025,
+        "count": 4092,
+        "avgCompleteness": 36.1,
+        "bySource": {
+          "DataCite": 4080,
+          "ANID": 12
+        }
+      },
+      {
+        "year": 2026,
+        "count": 280,
+        "avgCompleteness": 58.8,
+        "bySource": {
+          "DataCite": 279,
+          "ANID": 1
+        }
+      }
+    ]
+  },
+  {
+    "type": "Image",
+    "count": 4029,
+    "pct": 26.3,
+    "avgCompleteness": 57.5,
+    "fields": {
+      "hasOrcid": 35.6,
+      "hasLicense": 99.7,
+      "hasOpenLicense": 43.5,
+      "hasSubjects": 97.9,
+      "hasDescription": 96.7,
+      "hasFunding": 0.3,
+      "hasRelatedWorks": 99.7,
+      "hasVersion": 0.6,
+      "hasLanguage": 1.5,
+      "hasPublisher": 99.7
+    },
+    "fieldsBySource": {
+      "hasOrcid": {
+        "DataCite": 35.6,
+        "ANID": 38.5
+      },
+      "hasLicense": {
+        "DataCite": 100,
+        "ANID": 15.4
+      },
+      "hasOpenLicense": {
+        "DataCite": 43.6,
+        "ANID": 7.7
+      },
+      "hasSubjects": {
+        "DataCite": 98.1,
+        "ANID": 38.5
+      },
+      "hasDescription": {
+        "DataCite": 97,
+        "ANID": 23.1
+      },
+      "hasFunding": {
+        "DataCite": 0.3,
+        "ANID": 0
+      },
+      "hasRelatedWorks": {
+        "DataCite": 99.9,
+        "ANID": 15.4
+      },
+      "hasVersion": {
+        "DataCite": 0.6,
+        "ANID": 0
+      },
+      "hasLanguage": {
+        "DataCite": 1.4,
+        "ANID": 7.7
+      },
+      "hasPublisher": {
+        "DataCite": 100,
+        "ANID": 0
+      }
+    },
+    "bySource": {
+      "DataCite": 4016,
+      "ANID": 13
+    },
+    "completenessbySource": {
+      "DataCite": 57.6,
+      "ANID": 14.6
+    },
+    "repos": [
+      {
+        "name": "Zenodo",
+        "count": 3765,
+        "avgCompleteness": 57.4
+      },
+      {
+        "name": "figshare",
+        "count": 237,
+        "avgCompleteness": 61.8
+      },
+      {
+        "name": "ANID Repository",
+        "count": 13,
+        "avgCompleteness": 14.6
+      },
+      {
+        "name": "Springer Nature",
+        "count": 8,
+        "avgCompleteness": 60
+      },
+      {
+        "name": "LabEx DRIIHM",
+        "count": 3,
+        "avgCompleteness": 53.3
+      },
+      {
+        "name": "Journal of Bioinformatics and Genomics",
+        "count": 3,
+        "avgCompleteness": 70
+      }
+    ],
+    "yearly": [
+      {
+        "year": 2002,
+        "count": 12,
+        "avgCompleteness": 60,
+        "bySource": {
+          "DataCite": 12,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2004,
+        "count": 3,
+        "avgCompleteness": 80,
+        "bySource": {
+          "DataCite": 3,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2005,
+        "count": 28,
+        "avgCompleteness": 52.9,
+        "bySource": {
+          "DataCite": 28,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2006,
+        "count": 6,
+        "avgCompleteness": 50,
+        "bySource": {
+          "DataCite": 6,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2007,
+        "count": 8,
+        "avgCompleteness": 50,
+        "bySource": {
+          "DataCite": 8,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2009,
+        "count": 14,
+        "avgCompleteness": 50,
+        "bySource": {
+          "DataCite": 14,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2010,
+        "count": 20,
+        "avgCompleteness": 50,
+        "bySource": {
+          "DataCite": 20,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2011,
+        "count": 52,
+        "avgCompleteness": 50.8,
+        "bySource": {
+          "DataCite": 52,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2012,
+        "count": 40,
+        "avgCompleteness": 50,
+        "bySource": {
+          "DataCite": 40,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2013,
+        "count": 54,
+        "avgCompleteness": 50.7,
+        "bySource": {
+          "DataCite": 54,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2014,
+        "count": 88,
+        "avgCompleteness": 53,
+        "bySource": {
+          "DataCite": 88,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2015,
+        "count": 68,
+        "avgCompleteness": 55.9,
+        "bySource": {
+          "DataCite": 68,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2016,
+        "count": 59,
+        "avgCompleteness": 57.1,
+        "bySource": {
+          "DataCite": 58,
+          "ANID": 1
+        }
+      },
+      {
+        "year": 2017,
+        "count": 154,
+        "avgCompleteness": 57,
+        "bySource": {
+          "DataCite": 154,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2018,
+        "count": 156,
+        "avgCompleteness": 54.4,
+        "bySource": {
+          "DataCite": 156,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2019,
+        "count": 140,
+        "avgCompleteness": 56.9,
+        "bySource": {
+          "DataCite": 140,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2020,
+        "count": 539,
+        "avgCompleteness": 58.2,
+        "bySource": {
+          "DataCite": 539,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2021,
+        "count": 538,
+        "avgCompleteness": 58.8,
+        "bySource": {
+          "DataCite": 538,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2022,
+        "count": 381,
+        "avgCompleteness": 59.3,
+        "bySource": {
+          "DataCite": 381,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2023,
+        "count": 626,
+        "avgCompleteness": 58,
+        "bySource": {
+          "DataCite": 621,
+          "ANID": 5
+        }
+      },
+      {
+        "year": 2024,
+        "count": 702,
+        "avgCompleteness": 58.7,
+        "bySource": {
+          "DataCite": 699,
+          "ANID": 3
+        }
+      },
+      {
+        "year": 2025,
+        "count": 293,
+        "avgCompleteness": 57.2,
+        "bySource": {
+          "DataCite": 289,
+          "ANID": 4
+        }
+      },
+      {
+        "year": 2026,
+        "count": 48,
+        "avgCompleteness": 54,
+        "bySource": {
+          "DataCite": 48,
+          "ANID": 0
+        }
+      }
+    ]
+  },
+  {
+    "type": "Collection",
+    "count": 627,
+    "pct": 4.1,
+    "avgCompleteness": 61.7,
+    "fields": {
+      "hasOrcid": 51,
+      "hasLicense": 100,
+      "hasOpenLicense": 100,
+      "hasSubjects": 98.6,
+      "hasDescription": 100,
+      "hasFunding": 0,
+      "hasRelatedWorks": 59.8,
+      "hasVersion": 5.6,
+      "hasLanguage": 1.8,
+      "hasPublisher": 100
+    },
+    "fieldsBySource": {
+      "hasOrcid": {
+        "DataCite": 51,
+        "ANID": null
+      },
+      "hasLicense": {
+        "DataCite": 100,
+        "ANID": null
+      },
+      "hasOpenLicense": {
+        "DataCite": 100,
+        "ANID": null
+      },
+      "hasSubjects": {
+        "DataCite": 98.6,
+        "ANID": null
+      },
+      "hasDescription": {
+        "DataCite": 100,
+        "ANID": null
+      },
+      "hasFunding": {
+        "DataCite": 0,
+        "ANID": null
+      },
+      "hasRelatedWorks": {
+        "DataCite": 59.8,
+        "ANID": null
+      },
+      "hasVersion": {
+        "DataCite": 5.6,
+        "ANID": null
+      },
+      "hasLanguage": {
+        "DataCite": 1.8,
+        "ANID": null
+      },
+      "hasPublisher": {
+        "DataCite": 100,
+        "ANID": null
+      }
+    },
+    "bySource": {
+      "DataCite": 627
+    },
+    "completenessbySource": {
+      "DataCite": 61.7
+    },
+    "repos": [
+      {
+        "name": "figshare",
+        "count": 598,
+        "avgCompleteness": 61.5
+      },
+      {
+        "name": "SAGE Journals",
+        "count": 16,
+        "avgCompleteness": 57.5
+      },
+      {
+        "name": "Journal of Applied Econometrics",
+        "count": 7,
+        "avgCompleteness": 81.4
+      },
+      {
+        "name": "Zenodo",
+        "count": 6,
+        "avgCompleteness": 70
+      }
+    ],
+    "yearly": [
+      {
+        "year": 2005,
+        "count": 1,
+        "avgCompleteness": 90,
+        "bySource": {
+          "DataCite": 1,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2014,
+        "count": 1,
+        "avgCompleteness": 80,
+        "bySource": {
+          "DataCite": 1,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2016,
+        "count": 1,
+        "avgCompleteness": 90,
+        "bySource": {
+          "DataCite": 1,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2018,
+        "count": 1,
+        "avgCompleteness": 80,
+        "bySource": {
+          "DataCite": 1,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2019,
+        "count": 1,
+        "avgCompleteness": 80,
+        "bySource": {
+          "DataCite": 1,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2020,
+        "count": 11,
+        "avgCompleteness": 60.9,
+        "bySource": {
+          "DataCite": 11,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2021,
+        "count": 10,
+        "avgCompleteness": 63,
+        "bySource": {
+          "DataCite": 10,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2022,
+        "count": 83,
+        "avgCompleteness": 63.6,
+        "bySource": {
+          "DataCite": 83,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2023,
+        "count": 100,
+        "avgCompleteness": 61.7,
+        "bySource": {
+          "DataCite": 100,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2024,
+        "count": 278,
+        "avgCompleteness": 60.6,
+        "bySource": {
+          "DataCite": 278,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2025,
+        "count": 86,
+        "avgCompleteness": 60.3,
+        "bySource": {
+          "DataCite": 86,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2026,
+        "count": 54,
+        "avgCompleteness": 64.1,
+        "bySource": {
+          "DataCite": 54,
+          "ANID": 0
+        }
+      }
+    ]
+  },
+  {
+    "type": "Other",
+    "count": 342,
+    "pct": 2.2,
+    "avgCompleteness": 49.6,
+    "fields": {
+      "hasOrcid": 30.1,
+      "hasLicense": 98.8,
+      "hasOpenLicense": 45,
+      "hasSubjects": 24,
+      "hasDescription": 77.2,
+      "hasFunding": 2.6,
+      "hasRelatedWorks": 96.8,
+      "hasVersion": 7.3,
+      "hasLanguage": 74.9,
+      "hasPublisher": 39.5
+    },
+    "fieldsBySource": {
+      "hasOrcid": {
+        "DataCite": 76.3,
+        "ANID": 0
+      },
+      "hasLicense": {
+        "DataCite": 98.5,
+        "ANID": 99
+      },
+      "hasOpenLicense": {
+        "DataCite": 94.1,
+        "ANID": 13
+      },
+      "hasSubjects": {
+        "DataCite": 60.7,
+        "ANID": 0
+      },
+      "hasDescription": {
+        "DataCite": 69.6,
+        "ANID": 82.1
+      },
+      "hasFunding": {
+        "DataCite": 6.7,
+        "ANID": 0
+      },
+      "hasRelatedWorks": {
+        "DataCite": 96.3,
+        "ANID": 97.1
+      },
+      "hasVersion": {
+        "DataCite": 18.5,
+        "ANID": 0
+      },
+      "hasLanguage": {
+        "DataCite": 37.8,
+        "ANID": 99
+      },
+      "hasPublisher": {
+        "DataCite": 100,
+        "ANID": 0
+      }
+    },
+    "bySource": {
+      "DataCite": 135,
+      "ANID": 207
+    },
+    "completenessbySource": {
+      "DataCite": 65.9,
+      "ANID": 39
+    },
+    "repos": [
+      {
+        "name": "ANID Repository",
+        "count": 207,
+        "avgCompleteness": 39
+      },
+      {
+        "name": "Zenodo",
+        "count": 121,
+        "avgCompleteness": 66
+      },
+      {
+        "name": "Universidad Central de Chile",
+        "count": 4,
+        "avgCompleteness": 82.5
+      },
+      {
+        "name": "Universidad de Chile",
+        "count": 2,
+        "avgCompleteness": 40
+      },
+      {
+        "name": "Rodare",
+        "count": 2,
+        "avgCompleteness": 60
+      },
+      {
+        "name": "AAPRA",
+        "count": 2,
+        "avgCompleteness": 70
+      },
+      {
+        "name": "GCRF TRADE Hub",
+        "count": 1,
+        "avgCompleteness": 40
+      },
+      {
+        "name": "Sciences Po - LIEPP",
+        "count": 1,
+        "avgCompleteness": 70
+      },
+      {
+        "name": "figshare",
+        "count": 1,
+        "avgCompleteness": 60
+      },
+      {
+        "name": "Oregon Health and Science University",
+        "count": 1,
+        "avgCompleteness": 60
+      }
+    ],
+    "yearly": [
+      {
+        "year": 2011,
+        "count": 1,
+        "avgCompleteness": 40,
+        "bySource": {
+          "DataCite": 1,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2013,
+        "count": 1,
+        "avgCompleteness": 40,
+        "bySource": {
+          "DataCite": 0,
+          "ANID": 1
+        }
+      },
+      {
+        "year": 2014,
+        "count": 3,
+        "avgCompleteness": 50,
+        "bySource": {
+          "DataCite": 1,
+          "ANID": 2
+        }
+      },
+      {
+        "year": 2016,
+        "count": 182,
+        "avgCompleteness": 38.7,
+        "bySource": {
+          "DataCite": 0,
+          "ANID": 182
+        }
+      },
+      {
+        "year": 2017,
+        "count": 6,
+        "avgCompleteness": 53.3,
+        "bySource": {
+          "DataCite": 2,
+          "ANID": 4
+        }
+      },
+      {
+        "year": 2018,
+        "count": 8,
+        "avgCompleteness": 56.3,
+        "bySource": {
+          "DataCite": 5,
+          "ANID": 3
+        }
+      },
+      {
+        "year": 2019,
+        "count": 13,
+        "avgCompleteness": 66.2,
+        "bySource": {
+          "DataCite": 11,
+          "ANID": 2
+        }
+      },
+      {
+        "year": 2020,
+        "count": 8,
+        "avgCompleteness": 55,
+        "bySource": {
+          "DataCite": 8,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2021,
+        "count": 9,
+        "avgCompleteness": 58.9,
+        "bySource": {
+          "DataCite": 9,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2022,
+        "count": 19,
+        "avgCompleteness": 62.6,
+        "bySource": {
+          "DataCite": 19,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2023,
+        "count": 35,
+        "avgCompleteness": 74.9,
+        "bySource": {
+          "DataCite": 35,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2024,
+        "count": 29,
+        "avgCompleteness": 56.6,
+        "bySource": {
+          "DataCite": 22,
+          "ANID": 7
+        }
+      },
+      {
+        "year": 2025,
+        "count": 21,
+        "avgCompleteness": 62.9,
+        "bySource": {
+          "DataCite": 20,
+          "ANID": 1
+        }
+      },
+      {
+        "year": 2026,
+        "count": 7,
+        "avgCompleteness": 45.7,
+        "bySource": {
+          "DataCite": 2,
+          "ANID": 5
+        }
+      }
+    ]
+  },
+  {
+    "type": "Software",
+    "count": 330,
+    "pct": 2.2,
+    "avgCompleteness": 65.4,
+    "fields": {
+      "hasOrcid": 66.1,
+      "hasLicense": 97.9,
+      "hasOpenLicense": 83.6,
+      "hasSubjects": 44.8,
+      "hasDescription": 74.5,
+      "hasFunding": 5.5,
+      "hasRelatedWorks": 95.8,
+      "hasVersion": 57.9,
+      "hasLanguage": 30.6,
+      "hasPublisher": 97.6
+    },
+    "fieldsBySource": {
+      "hasOrcid": {
+        "DataCite": 67.7,
+        "ANID": 0
+      },
+      "hasLicense": {
+        "DataCite": 97.8,
+        "ANID": 100
+      },
+      "hasOpenLicense": {
+        "DataCite": 84.2,
+        "ANID": 62.5
+      },
+      "hasSubjects": {
+        "DataCite": 46,
+        "ANID": 0
+      },
+      "hasDescription": {
+        "DataCite": 75.5,
+        "ANID": 37.5
+      },
+      "hasFunding": {
+        "DataCite": 5.6,
+        "ANID": 0
+      },
+      "hasRelatedWorks": {
+        "DataCite": 96,
+        "ANID": 87.5
+      },
+      "hasVersion": {
+        "DataCite": 59.3,
+        "ANID": 0
+      },
+      "hasLanguage": {
+        "DataCite": 29.2,
+        "ANID": 87.5
+      },
+      "hasPublisher": {
+        "DataCite": 100,
+        "ANID": 0
+      }
+    },
+    "bySource": {
+      "DataCite": 322,
+      "ANID": 8
+    },
+    "completenessbySource": {
+      "DataCite": 66.1,
+      "ANID": 37.5
+    },
+    "repos": [
+      {
+        "name": "Zenodo",
+        "count": 307,
+        "avgCompleteness": 66.1
+      },
+      {
+        "name": "Code Ocean",
+        "count": 11,
+        "avgCompleteness": 70.9
+      },
+      {
+        "name": "ANID Repository",
+        "count": 8,
+        "avgCompleteness": 37.5
+      },
+      {
+        "name": "U.S. Geological Survey",
+        "count": 2,
+        "avgCompleteness": 45
+      },
+      {
+        "name": "GFZ Data Services",
+        "count": 1,
+        "avgCompleteness": 80
+      },
+      {
+        "name": "Socienty for Industrial and Applied Mathematics (SIAM)",
+        "count": 1,
+        "avgCompleteness": 40
+      }
+    ],
+    "yearly": [
+      {
+        "year": 2016,
+        "count": 6,
+        "avgCompleteness": 38.3,
+        "bySource": {
+          "DataCite": 3,
+          "ANID": 3
+        }
+      },
+      {
+        "year": 2017,
+        "count": 8,
+        "avgCompleteness": 48.7,
+        "bySource": {
+          "DataCite": 7,
+          "ANID": 1
+        }
+      },
+      {
+        "year": 2018,
+        "count": 9,
+        "avgCompleteness": 75.6,
+        "bySource": {
+          "DataCite": 8,
+          "ANID": 1
+        }
+      },
+      {
+        "year": 2019,
+        "count": 9,
+        "avgCompleteness": 73.3,
+        "bySource": {
+          "DataCite": 8,
+          "ANID": 1
+        }
+      },
+      {
+        "year": 2020,
+        "count": 36,
+        "avgCompleteness": 73.6,
+        "bySource": {
+          "DataCite": 35,
+          "ANID": 1
+        }
+      },
+      {
+        "year": 2021,
+        "count": 33,
+        "avgCompleteness": 59.4,
+        "bySource": {
+          "DataCite": 33,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2022,
+        "count": 38,
+        "avgCompleteness": 65.5,
+        "bySource": {
+          "DataCite": 38,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2023,
+        "count": 39,
+        "avgCompleteness": 64.6,
+        "bySource": {
+          "DataCite": 38,
+          "ANID": 1
+        }
+      },
+      {
+        "year": 2024,
+        "count": 57,
+        "avgCompleteness": 64.7,
+        "bySource": {
+          "DataCite": 57,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2025,
+        "count": 62,
+        "avgCompleteness": 66,
+        "bySource": {
+          "DataCite": 62,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2026,
+        "count": 33,
+        "avgCompleteness": 67.6,
+        "bySource": {
+          "DataCite": 33,
+          "ANID": 0
+        }
+      }
+    ]
+  },
+  {
+    "type": "OutputManagementPlan",
+    "count": 228,
+    "pct": 1.5,
+    "avgCompleteness": 12.7,
+    "fields": {
+      "hasOrcid": 100,
+      "hasLicense": 3.5,
+      "hasOpenLicense": 3.5,
+      "hasSubjects": 0.9,
+      "hasDescription": 11.8,
+      "hasFunding": 0,
+      "hasRelatedWorks": 7.5,
+      "hasVersion": 0,
+      "hasLanguage": 0,
+      "hasPublisher": 0
+    },
+    "fieldsBySource": {
+      "hasOrcid": {
+        "DataCite": null,
+        "ANID": 100
+      },
+      "hasLicense": {
+        "DataCite": null,
+        "ANID": 3.5
+      },
+      "hasOpenLicense": {
+        "DataCite": null,
+        "ANID": 3.5
+      },
+      "hasSubjects": {
+        "DataCite": null,
+        "ANID": 0.9
+      },
+      "hasDescription": {
+        "DataCite": null,
+        "ANID": 11.8
+      },
+      "hasFunding": {
+        "DataCite": null,
+        "ANID": 0
+      },
+      "hasRelatedWorks": {
+        "DataCite": null,
+        "ANID": 7.5
+      },
+      "hasVersion": {
+        "DataCite": null,
+        "ANID": 0
+      },
+      "hasLanguage": {
+        "DataCite": null,
+        "ANID": 0
+      },
+      "hasPublisher": {
+        "DataCite": null,
+        "ANID": 0
+      }
+    },
+    "bySource": {
+      "ANID": 228
+    },
+    "completenessbySource": {
+      "ANID": 12.7
+    },
+    "repos": [
+      {
+        "name": "ANID Repository",
+        "count": 228,
+        "avgCompleteness": 12.7
+      }
+    ],
+    "yearly": [
+      {
+        "year": 2021,
+        "count": 2,
+        "avgCompleteness": 10,
+        "bySource": {
+          "DataCite": 0,
+          "ANID": 2
+        }
+      },
+      {
+        "year": 2022,
+        "count": 4,
+        "avgCompleteness": 10,
+        "bySource": {
+          "DataCite": 0,
+          "ANID": 4
+        }
+      },
+      {
+        "year": 2023,
+        "count": 83,
+        "avgCompleteness": 14.3,
+        "bySource": {
+          "DataCite": 0,
+          "ANID": 83
+        }
+      },
+      {
+        "year": 2024,
+        "count": 40,
+        "avgCompleteness": 12,
+        "bySource": {
+          "DataCite": 0,
+          "ANID": 40
+        }
+      },
+      {
+        "year": 2025,
+        "count": 76,
+        "avgCompleteness": 11.7,
+        "bySource": {
+          "DataCite": 0,
+          "ANID": 76
+        }
+      },
+      {
+        "year": 2026,
+        "count": 21,
+        "avgCompleteness": 11.4,
+        "bySource": {
+          "DataCite": 0,
+          "ANID": 21
+        }
+      }
+    ]
+  },
+  {
+    "type": "Audiovisual",
+    "count": 164,
+    "pct": 1.1,
+    "avgCompleteness": 41.5,
+    "fields": {
+      "hasOrcid": 30.5,
+      "hasLicense": 39,
+      "hasOpenLicense": 38.4,
+      "hasSubjects": 70.1,
+      "hasDescription": 78.7,
+      "hasFunding": 2.4,
+      "hasRelatedWorks": 64,
+      "hasVersion": 3.7,
+      "hasLanguage": 20.1,
+      "hasPublisher": 68.3
+    },
+    "fieldsBySource": {
+      "hasOrcid": {
+        "DataCite": 43.8,
+        "ANID": 1.9
+      },
+      "hasLicense": {
+        "DataCite": 54.5,
+        "ANID": 5.8
+      },
+      "hasOpenLicense": {
+        "DataCite": 54.5,
+        "ANID": 3.8
+      },
+      "hasSubjects": {
+        "DataCite": 69.6,
+        "ANID": 71.2
+      },
+      "hasDescription": {
+        "DataCite": 74.1,
+        "ANID": 88.5
+      },
+      "hasFunding": {
+        "DataCite": 3.6,
+        "ANID": 0
+      },
+      "hasRelatedWorks": {
+        "DataCite": 57.1,
+        "ANID": 78.8
+      },
+      "hasVersion": {
+        "DataCite": 5.4,
+        "ANID": 0
+      },
+      "hasLanguage": {
+        "DataCite": 27.7,
+        "ANID": 3.8
+      },
+      "hasPublisher": {
+        "DataCite": 100,
+        "ANID": 0
+      }
+    },
+    "bySource": {
+      "DataCite": 112,
+      "ANID": 52
+    },
+    "completenessbySource": {
+      "DataCite": 49,
+      "ANID": 25.4
+    },
+    "repos": [
+      {
+        "name": "ANID Repository",
+        "count": 52,
+        "avgCompleteness": 25.4
+      },
+      {
+        "name": "Underline Science Inc.",
+        "count": 47,
+        "avgCompleteness": 26.4
+      },
+      {
+        "name": "Zenodo",
+        "count": 38,
+        "avgCompleteness": 62.6
+      },
+      {
+        "name": "CIRM",
+        "count": 13,
+        "avgCompleteness": 76.2
+      },
+      {
+        "name": "figshare",
+        "count": 8,
+        "avgCompleteness": 67.5
+      },
+      {
+        "name": "Perimeter Institute",
+        "count": 2,
+        "avgCompleteness": 40
+      },
+      {
+        "name": "PNAS Nexus",
+        "count": 2,
+        "avgCompleteness": 50
+      },
+      {
+        "name": "WAU 2025 Congress",
+        "count": 2,
+        "avgCompleteness": 80
+      }
+    ],
+    "yearly": [
+      {
+        "year": 2008,
+        "count": 1,
+        "avgCompleteness": 40,
+        "bySource": {
+          "DataCite": 1,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2015,
+        "count": 1,
+        "avgCompleteness": 40,
+        "bySource": {
+          "DataCite": 1,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2016,
+        "count": 5,
+        "avgCompleteness": 56,
+        "bySource": {
+          "DataCite": 4,
+          "ANID": 1
+        }
+      },
+      {
+        "year": 2017,
+        "count": 3,
+        "avgCompleteness": 80,
+        "bySource": {
+          "DataCite": 3,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2018,
+        "count": 2,
+        "avgCompleteness": 90,
+        "bySource": {
+          "DataCite": 2,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2019,
+        "count": 1,
+        "avgCompleteness": 80,
+        "bySource": {
+          "DataCite": 1,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2020,
+        "count": 8,
+        "avgCompleteness": 42.5,
+        "bySource": {
+          "DataCite": 8,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2021,
+        "count": 18,
+        "avgCompleteness": 48.3,
+        "bySource": {
+          "DataCite": 18,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2022,
+        "count": 25,
+        "avgCompleteness": 36.4,
+        "bySource": {
+          "DataCite": 22,
+          "ANID": 3
+        }
+      },
+      {
+        "year": 2023,
+        "count": 27,
+        "avgCompleteness": 34.8,
+        "bySource": {
+          "DataCite": 19,
+          "ANID": 8
+        }
+      },
+      {
+        "year": 2024,
+        "count": 43,
+        "avgCompleteness": 39.3,
+        "bySource": {
+          "DataCite": 19,
+          "ANID": 24
+        }
+      },
+      {
+        "year": 2025,
+        "count": 28,
+        "avgCompleteness": 40,
+        "bySource": {
+          "DataCite": 12,
+          "ANID": 16
+        }
+      },
+      {
+        "year": 2026,
+        "count": 2,
+        "avgCompleteness": 40,
+        "bySource": {
+          "DataCite": 2,
+          "ANID": 0
+        }
+      }
+    ]
+  },
+  {
+    "type": "Model",
+    "count": 23,
+    "pct": 0.2,
+    "avgCompleteness": 51.7,
+    "fields": {
+      "hasOrcid": 78.3,
+      "hasLicense": 87,
+      "hasOpenLicense": 87,
+      "hasSubjects": 8.7,
+      "hasDescription": 43.5,
+      "hasFunding": 0,
+      "hasRelatedWorks": 87,
+      "hasVersion": 17.4,
+      "hasLanguage": 8.7,
+      "hasPublisher": 100
+    },
+    "fieldsBySource": {
+      "hasOrcid": {
+        "DataCite": 78.3,
+        "ANID": null
+      },
+      "hasLicense": {
+        "DataCite": 87,
+        "ANID": null
+      },
+      "hasOpenLicense": {
+        "DataCite": 87,
+        "ANID": null
+      },
+      "hasSubjects": {
+        "DataCite": 8.7,
+        "ANID": null
+      },
+      "hasDescription": {
+        "DataCite": 43.5,
+        "ANID": null
+      },
+      "hasFunding": {
+        "DataCite": 0,
+        "ANID": null
+      },
+      "hasRelatedWorks": {
+        "DataCite": 87,
+        "ANID": null
+      },
+      "hasVersion": {
+        "DataCite": 17.4,
+        "ANID": null
+      },
+      "hasLanguage": {
+        "DataCite": 8.7,
+        "ANID": null
+      },
+      "hasPublisher": {
+        "DataCite": 100,
+        "ANID": null
+      }
+    },
+    "bySource": {
+      "DataCite": 23
+    },
+    "completenessbySource": {
+      "DataCite": 51.7
+    },
+    "repos": [
+      {
+        "name": "Zenodo",
+        "count": 20,
+        "avgCompleteness": 58
+      },
+      {
+        "name": "NOAA Global Monitoring Laboratory",
+        "count": 3,
+        "avgCompleteness": 10
+      }
+    ],
+    "yearly": [
+      {
+        "year": 2023,
+        "count": 2,
+        "avgCompleteness": 10,
+        "bySource": {
+          "DataCite": 2,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2024,
+        "count": 12,
+        "avgCompleteness": 53.3,
+        "bySource": {
+          "DataCite": 12,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2025,
+        "count": 5,
+        "avgCompleteness": 54,
+        "bySource": {
+          "DataCite": 5,
+          "ANID": 0
+        }
+      },
+      {
+        "year": 2026,
+        "count": 4,
+        "avgCompleteness": 65,
+        "bySource": {
+          "DataCite": 4,
+          "ANID": 0
+        }
+      }
+    ]
+  },
+  {
+    "type": "Workflow",
+    "count": 2,
+    "pct": 0,
+    "avgCompleteness": 60,
+    "fields": {
+      "hasOrcid": 100,
+      "hasLicense": 100,
+      "hasOpenLicense": 100,
+      "hasSubjects": 100,
+      "hasDescription": 0,
+      "hasFunding": 0,
+      "hasRelatedWorks": 100,
+      "hasVersion": 0,
+      "hasLanguage": 0,
+      "hasPublisher": 100
+    },
+    "fieldsBySource": {
+      "hasOrcid": {
+        "DataCite": 100,
+        "ANID": null
+      },
+      "hasLicense": {
+        "DataCite": 100,
+        "ANID": null
+      },
+      "hasOpenLicense": {
+        "DataCite": 100,
+        "ANID": null
+      },
+      "hasSubjects": {
+        "DataCite": 100,
+        "ANID": null
+      },
+      "hasDescription": {
+        "DataCite": 0,
+        "ANID": null
+      },
+      "hasFunding": {
+        "DataCite": 0,
+        "ANID": null
+      },
+      "hasRelatedWorks": {
+        "DataCite": 100,
+        "ANID": null
+      },
+      "hasVersion": {
+        "DataCite": 0,
+        "ANID": null
+      },
+      "hasLanguage": {
+        "DataCite": 0,
+        "ANID": null
+      },
+      "hasPublisher": {
+        "DataCite": 100,
+        "ANID": null
+      }
+    },
+    "bySource": {
+      "DataCite": 2
+    },
+    "completenessbySource": {
+      "DataCite": 60
+    },
+    "repos": [
+      {
+        "name": "Barcelona Supercomputing Center",
+        "count": 2,
+        "avgCompleteness": 60
+      }
+    ],
+    "yearly": [
+      {
+        "year": 2025,
+        "count": 2,
+        "avgCompleteness": 60,
+        "bySource": {
+          "DataCite": 2,
+          "ANID": 0
+        }
+      }
+    ]
+  }
+]

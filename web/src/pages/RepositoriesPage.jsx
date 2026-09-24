@@ -4,12 +4,12 @@ import Card from '../components/shared/Card';
 import TypeFilter from '../components/shared/TypeFilter';
 import RecordsList from '../components/shared/RecordsList';
 import EmptyState from '../components/shared/EmptyState';
+import { useI18n } from '../i18n/index.jsx';
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip,
   ResponsiveContainer,
 } from 'recharts';
 
-const fmt = v => typeof v === 'number' ? v.toLocaleString() : v;
 
 
 const tooltipStyle = {
@@ -24,6 +24,7 @@ const isChilean = (name) =>
   /Valparaiso/i.test(name) || /Concepci/i.test(name);
 
 export default function RepositoriesPage() {
+  const { t, n: fmt } = useI18n();
   const [selectedType, setSelectedType] = useState('All');
   const [selectedRepo, setSelectedRepo] = useState(null);
 
@@ -54,12 +55,12 @@ export default function RepositoriesPage() {
     <div className="space-y-6 animate-fade-in">
       <div>
         <h1 className="text-xl font-bold" style={{ color: 'var(--color-text)' }}>
-          Where Are Outputs Deposited?
+          {t('repos.title')}
         </h1>
         <p className="text-sm mt-1" style={{ color: 'var(--color-text2)' }}>
           {selectedType === 'All'
-            ? 'Repository landscape for all Chilean non-article research outputs.'
-            : `Where Chilean ${selectedType} outputs are deposited (${typeData?.count ?? 0} records).`}
+            ? t('repos.subAll')
+            : t('repos.subType', { type: selectedType, n: fmt(typeData?.count ?? 0) })}
         </p>
       </div>
 
@@ -69,10 +70,10 @@ export default function RepositoriesPage() {
       </Card>
 
       {/* ── Top repositories ──────────────────────────────────────── */}
-      <Card title={`Top Repositories${selectedType !== 'All' ? `: ${selectedType}` : ''}`}>
+      <Card title={selectedType === 'All' ? t('repos.cardTop') : t('repos.cardTopType', { type: selectedType })}>
         {dcRepos.length > 0 ? (
           <>
-            <p className="text-xs mb-2" style={{ color: 'var(--color-text2)' }}>Click a bar to see records</p>
+            <p className="text-xs mb-2" style={{ color: 'var(--color-text2)' }}>{t('common.clickBar')}</p>
             <ResponsiveContainer width="100%" height={Math.max(300, dcRepos.length * 30)}>
               <BarChart data={dcRepos} layout="vertical" barGap={4}
                 onClick={(e) => e?.activeLabel && setSelectedRepo(e.activeLabel)}
@@ -88,12 +89,12 @@ export default function RepositoriesPage() {
                     return (
                       <div className="text-xs p-2 rounded border" style={tooltipStyle}>
                         <div className="font-bold mb-1">{d.name}</div>
-                        <div>{fmt(d.count)} records | {d.avgCompleteness}% completeness</div>
+                        <div>{t('common.recordsPct', { n: fmt(d.count), pct: fmt(d.avgCompleteness) })}</div>
                       </div>
                     );
                   }}
                 />
-                <Bar dataKey="count" name="Records" fill="var(--color-accent)" radius={[0, 4, 4, 0]} />
+                <Bar dataKey="count" name={t('series.records')} fill="var(--color-accent)" radius={[0, 4, 4, 0]} />
               </BarChart>
             </ResponsiveContainer>
             {selectedRepo && (
@@ -110,15 +111,15 @@ export default function RepositoriesPage() {
       </Card>
 
       {/* ── Table ─────────────────────────────────────────────────── */}
-      <Card title="Repository Details">
+      <Card title={t('repos.cardDetails')}>
         {repoData.length > 0 ? (
           <div className="overflow-x-auto">
             <table className="w-full text-xs">
               <thead>
                 <tr style={{ color: 'var(--color-text2)' }}>
-                  <th className="text-left p-2">Repository</th>
-                  <th className="text-right p-2">Records</th>
-                  <th className="text-right p-2">Completeness</th>
+                  <th className="text-left p-2">{t('th.repository')}</th>
+                  <th className="text-right p-2">{t('th.records')}</th>
+                  <th className="text-right p-2">{t('th.completeness')}</th>
                 </tr>
               </thead>
               <tbody>
@@ -140,11 +141,11 @@ export default function RepositoriesPage() {
       </Card>
 
       {/* ── Institutional vs International ─────────────────────────── */}
-      <Card title={`Chilean vs International${selectedType !== 'All' ? `: ${selectedType}` : ''}`}>
+      <Card title={selectedType === 'All' ? t('repos.cardChileIntl') : t('repos.cardChileIntlType', { type: selectedType })}>
         <div className="grid md:grid-cols-2 gap-6">
           <div>
             <h4 className="text-sm font-medium mb-3" style={{ color: 'var(--color-tier1)' }}>
-              Chilean Institutional ({chileanRepos.length} repos, {fmt(chileanRepos.reduce((s, r) => s + r.count, 0))} records)
+              {t('repos.chilean', { n: fmt(chileanRepos.length), m: fmt(chileanRepos.reduce((s, r) => s + r.count, 0)) })}
             </h4>
             {chileanRepos.length > 0 ? (
               <div className="space-y-1 text-xs" style={{ color: 'var(--color-text2)' }}>
@@ -157,13 +158,13 @@ export default function RepositoriesPage() {
               </div>
             ) : (
               <p className="text-xs" style={{ color: 'var(--color-gap)' }}>
-                No Chilean institutional repos found for {selectedType}.
+                {t('repos.noChilean', { type: selectedType === 'All' ? t('common.all') : selectedType })}
               </p>
             )}
           </div>
           <div>
             <h4 className="text-sm font-medium mb-3" style={{ color: 'var(--color-tier2)' }}>
-              International ({intlRepos.length}+ repos, {fmt(intlRepos.reduce((s, r) => s + r.count, 0))}+ records)
+              {t('repos.intl', { n: fmt(intlRepos.length), m: fmt(intlRepos.reduce((s, r) => s + r.count, 0)) })}
             </h4>
             <div className="space-y-1 text-xs" style={{ color: 'var(--color-text2)' }}>
               {intlRepos.map(r => (

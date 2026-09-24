@@ -10,7 +10,7 @@ import { XMLParser } from "fast-xml-parser";
 
 const OAI_ENDPOINT = "https://repositorio.be-anid.com/server/oai/request";
 const METADATA_PREFIX = "dim";
-const DELAY_MS = 1000; // 1 req/s — polite for OAI-PMH
+const DELAY_MS = 1000; // 1 req/s: polite for OAI-PMH
 
 function sleep(ms) {
   return new Promise((r) => setTimeout(r, ms));
@@ -44,7 +44,7 @@ async function oaiRequest(params, retries = 3) {
       if (res.status === 503) {
         const retryAfter = parseInt(res.headers.get("retry-after")) || 30;
         console.warn(
-          `  OAI 503 — retrying in ${retryAfter}s (attempt ${attempt}/${retries})`,
+          `  OAI 503: retrying in ${retryAfter}s (attempt ${attempt}/${retries})`,
         );
         await sleep(retryAfter * 1000);
         continue;
@@ -178,7 +178,7 @@ export async function* harvest({ entityTypes = null, set = null, verbose = true 
         if (verbose) console.log("  No records match the query.");
         break;
       }
-      console.error(`  OAI-PMH error: ${code} — ${msg}`);
+      console.error(`  OAI-PMH error: ${code}: ${msg}`);
       break;
     }
 
