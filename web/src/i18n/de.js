@@ -13,7 +13,7 @@ export default {
   'footer.by': 'Von [Ricardo Hartley Belmar](https://rijdho.github.io) (ORCID [0000-0001-5058-9309](https://orcid.org/0000-0001-5058-9309))',
   'footer.license': 'Code unter MIT, Daten unter CC BY 4.0',
   'footer.source': '[Quellcode auf GitHub](https://github.com/rijdho/chilean-altoutputs)',
-  'footer.family': 'Teil von [Metadata Audits](https://rijdho.github.io/metaudits-home/)',
+  'footer.family': 'Teil von [Metaudits](https://rijdho.github.io/metaudits-home/)',
 
   'common.all': 'Alle',
   'common.clickBar': 'Einen Balken anklicken, um die Datensätze zu sehen',
