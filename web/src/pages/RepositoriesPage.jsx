@@ -9,6 +9,7 @@ import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip,
   ResponsiveContainer,
 } from 'recharts';
+import WrappedTick from '../components/shared/WrappedTick';
 
 
 
@@ -81,7 +82,7 @@ export default function RepositoriesPage() {
               >
                 <CartesianGrid strokeDasharray="2 4" stroke="var(--color-border)" strokeOpacity={0.5} />
                 <XAxis type="number" tick={{ fontSize: 11 }} />
-                <YAxis type="category" dataKey="name" width={220} tick={{ fontSize: 9 }} />
+                <YAxis type="category" dataKey="name" width={220} tick={(props) => <WrappedTick {...props} width={220} />} />
                 <Tooltip
                   content={({ active, payload }) => {
                     if (!active || !payload?.[0]) return null;

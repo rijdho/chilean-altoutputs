@@ -9,6 +9,7 @@ import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
   ResponsiveContainer, LineChart, Line,
 } from 'recharts';
+import { categoryAxisWidth } from '../lib/axis.js';
 
 
 const tooltipStyle = {
@@ -82,7 +83,7 @@ export default function CompletenessPage() {
             <BarChart data={fieldData} layout="vertical" barGap={2}>
               <CartesianGrid strokeDasharray="2 4" stroke="var(--color-border)" strokeOpacity={0.5} />
               <XAxis type="number" domain={[0, 100]} tick={{ fontSize: 11 }} tickFormatter={v => `${v}%`} />
-              <YAxis type="category" dataKey="field" width={120} tick={{ fontSize: 10 }} />
+              <YAxis type="category" dataKey="field" width={categoryAxisWidth(fieldData.map(d => d.field))} tick={{ fontSize: 10 }} />
               <Tooltip
                 content={({ active, payload }) => {
                   if (!active || !payload?.[0]) return null;

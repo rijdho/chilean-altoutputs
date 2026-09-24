@@ -36,6 +36,8 @@ const tooltipStyle = {
 };
 
 import EmptyState from '../components/shared/EmptyState';
+import { categoryAxisWidth } from '../lib/axis.js';
+import WrappedTick from '../components/shared/WrappedTick';
 
 /* Compute license distribution from records-lite for a given filter */
 function computeLicenses(records) {
@@ -188,7 +190,7 @@ export default function OverviewPage() {
           >
             <CartesianGrid strokeDasharray="2 4" stroke="var(--color-border)" strokeOpacity={0.5} />
             <XAxis type="number" domain={[0, 100]} tick={{ fontSize: 11 }} tickFormatter={v => `${v}%`} />
-            <YAxis type="category" dataKey="field" width={110} tick={{ fontSize: 10 }} />
+            <YAxis type="category" dataKey="field" width={categoryAxisWidth(fieldsData.map(f => field(f.id, 'label', f.label)))} tick={{ fontSize: 10 }} />
             <Tooltip
               content={({ active, payload }) => {
                 if (!active || !payload?.[0]) return null;
@@ -236,7 +238,7 @@ export default function OverviewPage() {
                     >
                       <CartesianGrid strokeDasharray="2 4" stroke="var(--color-border)" strokeOpacity={0.5} />
                       <XAxis type="number" tick={{ fontSize: 11 }} />
-                      <YAxis type="category" dataKey="type" width={140} tick={{ fontSize: 10 }} />
+                      <YAxis type="category" dataKey="type" width={categoryAxisWidth(types.map(t => t.type))} tick={{ fontSize: 10 }} />
                       <Tooltip formatter={v => fmt(v)} contentStyle={tooltipStyle} />
                       <Legend />
                       <Bar dataKey="DataCite" name="DataCite" fill="var(--color-accent)" stackId="src" />
@@ -263,7 +265,7 @@ export default function OverviewPage() {
                   >
                     <CartesianGrid strokeDasharray="2 4" stroke="var(--color-border)" strokeOpacity={0.5} />
                     <XAxis type="number" domain={[0, 100]} tick={{ fontSize: 11 }} tickFormatter={v => `${v}%`} />
-                    <YAxis type="category" dataKey="type" width={140} tick={{ fontSize: 10 }} />
+                    <YAxis type="category" dataKey="type" width={categoryAxisWidth(types.map(t => t.type))} tick={{ fontSize: 10 }} />
                     <Tooltip formatter={v => v != null ? `${v}%` : '--'} contentStyle={tooltipStyle} />
                     <Legend />
                     <Bar dataKey="DataCite" name="DataCite" fill="var(--color-accent)" radius={[0, 4, 4, 0]} />
@@ -297,7 +299,7 @@ export default function OverviewPage() {
             >
               <CartesianGrid strokeDasharray="2 4" stroke="var(--color-border)" strokeOpacity={0.5} />
               <XAxis type="number" tick={{ fontSize: 11 }} />
-              <YAxis type="category" dataKey="name" width={200} tick={{ fontSize: 9 }} />
+              <YAxis type="category" dataKey="name" width={200} tick={(props) => <WrappedTick {...props} width={200} maxLines={2} />} />
               <Tooltip
                 content={({ active, payload }) => {
                   if (!active || !payload?.[0]) return null;
@@ -335,7 +337,7 @@ export default function OverviewPage() {
                 <BarChart data={licenseData} layout="vertical" style={{ cursor: 'pointer' }}>
                   <CartesianGrid strokeDasharray="2 4" stroke="var(--color-border)" strokeOpacity={0.5} />
                   <XAxis type="number" tick={{ fontSize: 11 }} />
-                  <YAxis type="category" dataKey="license" width={130} tick={{ fontSize: 9 }} tickFormatter={licLabel} />
+                  <YAxis type="category" dataKey="license" width={130} tick={(props) => <WrappedTick {...props} width={130} maxLines={2} format={licLabel} />} />
                   <Tooltip formatter={v => fmt(v)} contentStyle={tooltipStyle} />
                   <Legend />
                   <Bar dataKey="DataCite" name="DataCite" fill="var(--color-accent)" stackId="src"
@@ -359,7 +361,7 @@ export default function OverviewPage() {
               <BarChart data={topInstitutions} layout="vertical" barGap={4}>
                 <CartesianGrid strokeDasharray="2 4" stroke="var(--color-border)" strokeOpacity={0.5} />
                 <XAxis type="number" tick={{ fontSize: 11 }} />
-                <YAxis type="category" dataKey="name" width={180} tick={{ fontSize: 9 }} />
+                <YAxis type="category" dataKey="name" width={180} tick={(props) => <WrappedTick {...props} width={180} maxLines={2} />} />
                 <Tooltip
                   content={({ active, payload }) => {
                     if (!active || !payload?.[0]) return null;
