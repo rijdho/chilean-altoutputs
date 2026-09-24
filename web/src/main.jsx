@@ -54,6 +54,7 @@ function App() {
           <span>
             <p className="brand-name"><a href="./">{t('app.title')}</a></p>
             <a className="brand-sub" href="https://rijdho.github.io">rijdho.github.io</a>
+            <p className="brand-family">{tr('footer.family')}</p>
           </span>
         </div>
         {SECTIONS.map(sec => (
@@ -73,7 +74,6 @@ function App() {
           {/* One licence per line: the rail is too narrow for both, and would break inside "CC BY 4.0". */}
           {t('footer.license').split(", ").map((part) => <span key={part}>{part}<br /></span>)}
           {tr('footer.source')}<br />
-          {tr('footer.family')}<br />
           {t('rail.data')}
         </div>
       </aside>
