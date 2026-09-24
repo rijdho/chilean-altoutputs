@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+/* ── Theme custom properties (dark default, "Obsidian Teal" palette) ──────── */
+
+:root {
+  --color-bg:       #0c110f;
+  --color-surface:  #141c19;
+  --color-surface2: #1a2723;
+  --color-border:   #243530;
+  --color-accent:   #5bb5a2;
+  --color-accent2:  #4a9a89;
+  --color-text:     #e0e0e0;
+  --color-text2:    #a0a0a0;
+  --color-tier1:    #5bb5a2;
+  --color-tier2:    #e8a838;
+  --color-gap:      #e85858;
+}
+
+[data-theme="light"] {
+  --color-bg:       #f8fafc;
+  --color-surface:  #ffffff;
+  --color-surface2: #eef3f1;
+  --color-border:   #d0d8d5;
+  --color-accent:   #0891b2;
+  --color-accent2:  #0e7490;
+  --color-text:     #0f172a;
+  --color-text2:    #64748b;
+  --color-tier1:    #0891b2;
+  --color-tier2:    #d97706;
+  --color-gap:      #dc2626;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  margin: 0;
+}
+
+/* ── Recharts overrides ──────────────────────────────────────────────────── */
+
+.recharts-cartesian-axis-tick-value {
+  fill: var(--color-text2) !important;
+  font-size: 11px;
+}
+
+.recharts-legend-item-text {
+  color: var(--color-text) !important;
+}
+
+.recharts-tooltip-wrapper .recharts-default-tooltip {
+  background-color: var(--color-surface) !important;
+  border: 1px solid var(--color-border) !important;
+  color: var(--color-text) !important;
+}
+
+/* ── Scrollbar ───────────────────────────────────────────────────────────── */
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent2);
+}
+
+/* ── Fade-in animation ───────────────────────────────────────────────────── */
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out both;
+}

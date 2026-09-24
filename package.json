@@ -1,0 +1,18 @@
+{
+  "name": "chilean-altoutputs",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "pipeline:datacite": "node pipeline/00-fetch-datacite.mjs",
+    "pipeline:anid": "node pipeline/01-fetch-anid.mjs",
+    "pipeline:analyze": "node pipeline/02-analyze.mjs",
+    "pipeline:aggregate": "node pipeline/03-aggregate.mjs",
+    "pipeline:all": "npm run pipeline:datacite && npm run pipeline:anid && npm run pipeline:analyze && npm run pipeline:aggregate",
+    "dev": "cd web && npm run dev",
+    "build": "cd web && npm run build"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^4.5.0"
+  }
+}
