@@ -2,10 +2,10 @@ cff-version: 1.2.0
 message: "If you use this dashboard or its data, please cite it as below."
 title: "Beyond Articles: metadata completeness of Chilean research outputs other than articles"
 abstract: >-
-  A dashboard of how completely Chilean research outputs that are not articles (datasets,
-  images, collections, software, data management plans and models) are described in DataCite and in
-  ANID's repository: where they are deposited, under which licence, and how completely they are
-  described. Each record is checked for ten metadata fields. The harvest and scoring pipeline is in
+  A dashboard of how completely Chilean research outputs that are not articles (datasets, images,
+  software, data management plans and others) are described: those in DataCite with a creator
+  affiliated in Chile, and those in ANID's repository. It shows where they are deposited, under which
+  licence, and how completely they are described. Each record is checked for ten metadata fields. The harvest and scoring pipeline is in
   the repository; the aggregated results in data/dashboard/ are under CC BY 4.0. Code under MIT.
 type: software
 authors:
