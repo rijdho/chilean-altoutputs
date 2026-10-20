@@ -1,5 +1,7 @@
 # Beyond Articles
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23498567.svg)](https://doi.org/10.5281/zenodo.23498567)
+
 How complete is the metadata of Chilean research outputs that are not articles: datasets,
 software, images, collections, data management plans? This project harvests them from DataCite
 and from ANID's repository, scores each record on ten fields, and shows the result as a dashboard.
@@ -88,3 +90,9 @@ taken then keeps those terms; before and after, MIT.
 
 By [Ricardo Hartley Belmar](https://rijdho.github.io) (ORCID
 [0000-0001-5058-9309](https://orcid.org/0000-0001-5058-9309)).
+
+## Citation
+
+If you use this dashboard or its data, please cite it: see [`CITATION.cff`](CITATION.cff) or the "Cite this
+repository" button. Archived on Zenodo: concept DOI
+[10.5281/zenodo.23498567](https://doi.org/10.5281/zenodo.23498567) (always resolves to the latest version).

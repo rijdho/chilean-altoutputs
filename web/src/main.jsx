@@ -11,7 +11,7 @@ import './index.css';
 const THEME_KEY = 'ca-theme';
 const REPO = 'https://github.com/rijdho/chilean-altoutputs';
 // The concept DOI, once the project is archived on Zenodo; the rail shows it only when set.
-const DOI = null;
+const DOI = '10.5281/zenodo.23498567';
 
 // The house shell: sections of the rail, each item with its two-letter step badge.
 const SECTIONS = [
