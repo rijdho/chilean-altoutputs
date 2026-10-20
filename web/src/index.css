@@ -1,0 +1,35 @@
+@import "tailwindcss";
+/* The shared look. A copy of the house style: never edit it, run `npm run sync-house`. */
+@import "./house/house.css";
+
+/* ── This dashboard's names, mapped onto the house tokens ─────────────────────
+   Components and charts read --color-*; the values come from the house palette, so light, dark and
+   the OS preference all follow it. DataCite and ANID are the two data series: the brand violet and
+   the FAIR amber, which stay distinct for colour-vision deficiency in both modes. */
+:root {
+  --color-bg:       var(--paper);
+  --color-surface:  var(--surface);
+  --color-surface2: var(--surface-2);
+  --color-border:   var(--hairline);
+  --color-accent:   var(--brand);
+  --color-accent2:  var(--brand);
+  --color-text:     var(--ink);
+  --color-text2:    var(--ink-2);
+  --color-tier1:    var(--brand);
+  --color-tier2:    var(--f-A);
+  --color-gap:      var(--lvl-lo);
+}
+
+/* A dashboard needs more width than the house default. */
+.content-inner { max-width: 1180px; }
+
+/* ── Recharts, in house type and colours ───────────────────────────────────── */
+.recharts-cartesian-axis-tick-value { fill: var(--muted) !important; font-size: 11px; font-family: var(--mono); }
+.recharts-legend-item-text { color: var(--text) !important; font-family: var(--mono); font-size: 12px; }
+.recharts-cartesian-grid line { stroke: var(--hair); }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in { animation: fadeIn 0.25s ease-out both; }

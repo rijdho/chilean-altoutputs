@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this dashboard or its data, please cite it as below."
+title: "Beyond Articles: metadata completeness of Chilean research outputs other than articles"
+abstract: >-
+  A dashboard of how completely Chilean research outputs that are not articles (datasets,
+  images, collections, software, data management plans and models) are described in DataCite and in
+  ANID's repository: where they are deposited, under which licence, and how completely they are
+  described. Each record is checked for ten metadata fields. The harvest and scoring pipeline is in
+  the repository; the aggregated results in data/dashboard/ are under CC BY 4.0. Code under MIT.
+type: software
+authors:
+  - family-names: "Hartley Belmar"
+    given-names: "Ricardo"
+    alias: rijdho
+    orcid: "https://orcid.org/0000-0001-5058-9309"
+repository-code: "https://github.com/rijdho/chilean-altoutputs"
+url: "https://rijdho.github.io/chilean-altoutputs/"
+license: MIT
+version: "0.1.0"
+date-released: "2026-10-20"
+keywords:
+  - research outputs
+  - metadata quality
+  - DataCite
+  - ANID
+  - Chile
+  - open science
+  - research software

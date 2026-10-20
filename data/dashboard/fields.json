@@ -1,0 +1,212 @@
+[
+  {
+    "id": "hasOrcid",
+    "label": "Creator ORCID",
+    "description": "At least one creator has a well-formed ORCID identifier (pattern and check digit)",
+    "pct": 62,
+    "count": 11387,
+    "bySource": {
+      "DataCite": 63.2,
+      "ANID": 39.9
+    },
+    "byType": {
+      "Dataset": 73.1,
+      "Image": 34.4,
+      "Software": 70.8,
+      "Collection": 50.8,
+      "Other": 25.8,
+      "OutputManagementPlan": 100,
+      "Audiovisual": 28.1,
+      "InteractiveResource": 94.8
+    }
+  },
+  {
+    "id": "hasLicense",
+    "label": "License",
+    "description": "A licence or terms of use in the rights field (access statements such as Open Access or Restricted Access do not count)",
+    "pct": 59.3,
+    "count": 10894,
+    "bySource": {
+      "DataCite": 59.5,
+      "ANID": 55.1
+    },
+    "byType": {
+      "Dataset": 48.3,
+      "Image": 75.7,
+      "Software": 94.1,
+      "Collection": 100,
+      "Other": 97.5,
+      "OutputManagementPlan": 2.9,
+      "Audiovisual": 37.1,
+      "InteractiveResource": 100
+    }
+  },
+  {
+    "id": "hasOpenLicense",
+    "label": "Open License",
+    "description": "An open licence: CC BY, CC BY-SA, CC0 or an OSI software licence (NonCommercial and NoDerivatives do not count)",
+    "pct": 45.9,
+    "count": 8424,
+    "bySource": {
+      "DataCite": 48.2,
+      "ANID": 2.2
+    },
+    "byType": {
+      "Dataset": 42,
+      "Image": 44,
+      "Software": 90.7,
+      "Collection": 100,
+      "Other": 31.1,
+      "OutputManagementPlan": 0,
+      "Audiovisual": 24,
+      "InteractiveResource": 94.8
+    }
+  },
+  {
+    "id": "hasSubjects",
+    "label": "Subject Keywords",
+    "description": "Subject or keyword metadata present",
+    "pct": 48.1,
+    "count": 8839,
+    "bySource": {
+      "DataCite": 49.4,
+      "ANID": 24.8
+    },
+    "byType": {
+      "Dataset": 27.9,
+      "Image": 97.9,
+      "Software": 62.2,
+      "Collection": 98.7,
+      "Other": 18.5,
+      "OutputManagementPlan": 0.7,
+      "Audiovisual": 67.1,
+      "InteractiveResource": 67.5
+    }
+  },
+  {
+    "id": "hasDescription",
+    "label": "Description",
+    "description": "Non-trivial description (>20 words)",
+    "pct": 54.9,
+    "count": 10079,
+    "bySource": {
+      "DataCite": 54.9,
+      "ANID": 54.4
+    },
+    "byType": {
+      "Dataset": 34.8,
+      "Image": 96.6,
+      "Software": 79.5,
+      "Collection": 100,
+      "Other": 75.8,
+      "OutputManagementPlan": 13.2,
+      "Audiovisual": 79,
+      "InteractiveResource": 70.1
+    }
+  },
+  {
+    "id": "hasFunding",
+    "label": "Funding Info",
+    "description": "Funding or grant information present",
+    "pct": 9.7,
+    "count": 1776,
+    "bySource": {
+      "DataCite": 5.1,
+      "ANID": 94.8
+    },
+    "byType": {
+      "Dataset": 9,
+      "Image": 0.7,
+      "Software": 5.5,
+      "Collection": 0.3,
+      "Other": 69.1,
+      "OutputManagementPlan": 97.1,
+      "Audiovisual": 37.7,
+      "InteractiveResource": 7.8
+    }
+  },
+  {
+    "id": "hasRelatedWorks",
+    "label": "Related Identifiers",
+    "description": "A link to another work (links to the record's own files or versions do not count)",
+    "pct": 43.8,
+    "count": 8041,
+    "bySource": {
+      "DataCite": 44.4,
+      "ANID": 33
+    },
+    "byType": {
+      "Dataset": 24.8,
+      "Image": 97.5,
+      "Software": 72.3,
+      "Collection": 17.5,
+      "Other": 50.2,
+      "OutputManagementPlan": 1.5,
+      "Audiovisual": 44.3,
+      "InteractiveResource": 7.8
+    }
+  },
+  {
+    "id": "hasVersion",
+    "label": "Version",
+    "description": "Version information specified",
+    "pct": 16.2,
+    "count": 2981,
+    "bySource": {
+      "DataCite": 17.1,
+      "ANID": 0
+    },
+    "byType": {
+      "Dataset": 19.5,
+      "Image": 1,
+      "Software": 74.6,
+      "Collection": 9.2,
+      "Other": 5.7,
+      "OutputManagementPlan": 0,
+      "Audiovisual": 3.6,
+      "InteractiveResource": 46.8
+    }
+  },
+  {
+    "id": "hasLanguage",
+    "label": "Language",
+    "description": "Language of the resource specified",
+    "pct": 14.5,
+    "count": 2658,
+    "bySource": {
+      "DataCite": 12.8,
+      "ANID": 45.9
+    },
+    "byType": {
+      "Dataset": 16,
+      "Image": 1.5,
+      "Software": 36.5,
+      "Collection": 1.6,
+      "Other": 72.5,
+      "OutputManagementPlan": 2.6,
+      "Audiovisual": 19.8,
+      "InteractiveResource": 83.1
+    }
+  },
+  {
+    "id": "hasPublisher",
+    "label": "Publisher / Repository",
+    "description": "Publisher or repository name specified",
+    "pct": 95.1,
+    "count": 17463,
+    "bySource": {
+      "DataCite": 100,
+      "ANID": 4.1
+    },
+    "byType": {
+      "Dataset": 98,
+      "Image": 99.6,
+      "Software": 98.9,
+      "Collection": 100,
+      "Other": 32.8,
+      "OutputManagementPlan": 2.6,
+      "Audiovisual": 64.1,
+      "InteractiveResource": 100
+    }
+  }
+]

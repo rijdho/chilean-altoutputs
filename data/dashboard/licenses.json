@@ -1,0 +1,219 @@
+{
+  "total": 18366,
+  "withLicense": 10894,
+  "withLicensePct": 59.3,
+  "openLicense": 8424,
+  "openLicensePct": 45.9,
+  "distribution": [
+    {
+      "name": "No license",
+      "count": 8295,
+      "pct": 45.2,
+      "DataCite": 7989,
+      "ANID": 306
+    },
+    {
+      "name": "CC BY",
+      "count": 6855,
+      "pct": 37.3,
+      "DataCite": 6855,
+      "ANID": 0
+    },
+    {
+      "name": "Open Access (unspecified)",
+      "count": 1293,
+      "pct": 7,
+      "DataCite": 1078,
+      "ANID": 215
+    },
+    {
+      "name": "CC0",
+      "count": 443,
+      "pct": 2.4,
+      "DataCite": 443,
+      "ANID": 0
+    },
+    {
+      "name": "CC BY-NC-ND",
+      "count": 419,
+      "pct": 2.3,
+      "DataCite": 22,
+      "ANID": 397
+    },
+    {
+      "name": "MIT",
+      "count": 389,
+      "pct": 2.1,
+      "DataCite": 389,
+      "ANID": 0
+    },
+    {
+      "name": "Refer to CDS usage",
+      "count": 227,
+      "pct": 1.2,
+      "DataCite": 227,
+      "ANID": 0
+    },
+    {
+      "name": "CC BY-NC",
+      "count": 98,
+      "pct": 0.5,
+      "DataCite": 91,
+      "ANID": 7
+    },
+    {
+      "name": "Restricted Access",
+      "count": 53,
+      "pct": 0.3,
+      "DataCite": 53,
+      "ANID": 0
+    },
+    {
+      "name": "GNU General Public License v3.0 only",
+      "count": 31,
+      "pct": 0.2,
+      "DataCite": 31,
+      "ANID": 0
+    },
+    {
+      "name": "CC BY-SA",
+      "count": 28,
+      "pct": 0.2,
+      "DataCite": 28,
+      "ANID": 0
+    },
+    {
+      "name": "Closed Access",
+      "count": 27,
+      "pct": 0.1,
+      "DataCite": 27,
+      "ANID": 0
+    },
+    {
+      "name": "Other",
+      "count": 22,
+      "pct": 0.1,
+      "DataCite": 22,
+      "ANID": 0
+    },
+    {
+      "name": "Apache-2.0",
+      "count": 21,
+      "pct": 0.1,
+      "DataCite": 21,
+      "ANID": 0
+    },
+    {
+      "name": "CC BY-NC-SA",
+      "count": 20,
+      "pct": 0.1,
+      "DataCite": 16,
+      "ANID": 4
+    },
+    {
+      "name": "BSD",
+      "count": 18,
+      "pct": 0.1,
+      "DataCite": 18,
+      "ANID": 0
+    },
+    {
+      "name": "CC BY-ND",
+      "count": 12,
+      "pct": 0.1,
+      "DataCite": 12,
+      "ANID": 0
+    },
+    {
+      "name": "GNU General Public License v3.0 or later",
+      "count": 11,
+      "pct": 0.1,
+      "DataCite": 11,
+      "ANID": 0
+    },
+    {
+      "name": "GNU Affero General Public License v3....",
+      "count": 11,
+      "pct": 0.1,
+      "DataCite": 11,
+      "ANID": 0
+    },
+    {
+      "name": "These data are available to be used s...",
+      "count": 10,
+      "pct": 0.1,
+      "DataCite": 10,
+      "ANID": 0
+    },
+    {
+      "name": "Attribution 3.0 Spain",
+      "count": 7,
+      "pct": 0,
+      "DataCite": 0,
+      "ANID": 7
+    },
+    {
+      "name": "Open Data Commons Attribution License...",
+      "count": 6,
+      "pct": 0,
+      "DataCite": 6,
+      "ANID": 0
+    },
+    {
+      "name": "Materials Cloud non-exclusive license...",
+      "count": 6,
+      "pct": 0,
+      "DataCite": 6,
+      "ANID": 0
+    },
+    {
+      "name": "info:eu-repo/semantics/embargoedAccess",
+      "count": 6,
+      "pct": 0,
+      "DataCite": 0,
+      "ANID": 6
+    },
+    {
+      "name": "Open Government Licence V3.0",
+      "count": 5,
+      "pct": 0,
+      "DataCite": 5,
+      "ANID": 0
+    },
+    {
+      "name": "Open Government Licence v3.0",
+      "count": 5,
+      "pct": 0,
+      "DataCite": 5,
+      "ANID": 0
+    },
+    {
+      "name": "GNU General Public License v2.0 only",
+      "count": 5,
+      "pct": 0,
+      "DataCite": 5,
+      "ANID": 0
+    },
+    {
+      "name": "The data made available through INTER...",
+      "count": 3,
+      "pct": 0,
+      "DataCite": 3,
+      "ANID": 0
+    },
+    {
+      "name": "open",
+      "count": 3,
+      "pct": 0,
+      "DataCite": 3,
+      "ANID": 0
+    },
+    {
+      "name": "Open Use of Data Agreement v1.0",
+      "count": 3,
+      "pct": 0,
+      "DataCite": 3,
+      "ANID": 0
+    }
+  ]
+}

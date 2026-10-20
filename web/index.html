@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--
+      GitHub Pages sends no security headers, so this <meta> is the only policy available.
+      Everything is served from this origin: the bundle, the stylesheet, the self-hosted fonts and
+      the records file the lists fetch (connect-src 'self'). React and Recharts style through the
+      CSSOM, which CSP does not govern, so style-src needs no 'unsafe-inline'. Clickjacking stays
+      uncovered: frame-ancestors only works as a response header.
+    -->
+    <meta http-equiv="Content-Security-Policy" content="
+      default-src 'none';
+      script-src 'self';
+      style-src 'self';
+      font-src 'self';
+      img-src 'self' data:;
+      connect-src 'self';
+      form-action 'none';
+      base-uri 'none';
+      object-src 'none'" />
+    <title>Beyond Articles: Chilean research outputs in DataCite</title>
+    <meta name="description" content="How completely are Chilean research outputs that are not articles described? Datasets, software and more from DataCite and ANID, checked for ten metadata fields. In English, Spanish and German." />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇨🇱</text></svg>" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

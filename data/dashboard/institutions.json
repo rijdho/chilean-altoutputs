@@ -1,0 +1,590 @@
+[
+  {
+    "name": "Universidad de Chile",
+    "count": 7962,
+    "avgCompleteness": 38.2,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 6712
+      },
+      {
+        "type": "Image",
+        "count": 530
+      },
+      {
+        "type": "Collection",
+        "count": 355
+      }
+    ]
+  },
+  {
+    "name": "Pontificia Universidad Católica de Chile",
+    "count": 2445,
+    "avgCompleteness": 50.4,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 1620
+      },
+      {
+        "type": "Image",
+        "count": 338
+      },
+      {
+        "type": "Collection",
+        "count": 260
+      }
+    ]
+  },
+  {
+    "name": "Universidad de Santiago de Chile",
+    "count": 1221,
+    "avgCompleteness": 38.4,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 1025
+      },
+      {
+        "type": "Software",
+        "count": 86
+      },
+      {
+        "type": "Collection",
+        "count": 60
+      }
+    ]
+  },
+  {
+    "name": "Universidad Austral de Chile",
+    "count": 1077,
+    "avgCompleteness": 55.5,
+    "topTypes": [
+      {
+        "type": "Image",
+        "count": 559
+      },
+      {
+        "type": "Dataset",
+        "count": 440
+      },
+      {
+        "type": "Software",
+        "count": 72
+      }
+    ]
+  },
+  {
+    "name": "Universidad de Concepción",
+    "count": 1062,
+    "avgCompleteness": 55.1,
+    "topTypes": [
+      {
+        "type": "Image",
+        "count": 535
+      },
+      {
+        "type": "Dataset",
+        "count": 463
+      },
+      {
+        "type": "Collection",
+        "count": 31
+      }
+    ]
+  },
+  {
+    "name": "Universidad Autónoma de Chile",
+    "count": 418,
+    "avgCompleteness": 57.8,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 241
+      },
+      {
+        "type": "Collection",
+        "count": 75
+      },
+      {
+        "type": "Image",
+        "count": 61
+      }
+    ]
+  },
+  {
+    "name": "Universidad Católica del Norte",
+    "count": 323,
+    "avgCompleteness": 53.1,
+    "topTypes": [
+      {
+        "type": "Image",
+        "count": 208
+      },
+      {
+        "type": "Dataset",
+        "count": 105
+      },
+      {
+        "type": "Software",
+        "count": 6
+      }
+    ]
+  },
+  {
+    "name": "Universidad Andrés Bello",
+    "count": 207,
+    "avgCompleteness": 62.5,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 100
+      },
+      {
+        "type": "Image",
+        "count": 84
+      },
+      {
+        "type": "Software",
+        "count": 21
+      }
+    ]
+  },
+  {
+    "name": "Universidad de Valparaíso",
+    "count": 144,
+    "avgCompleteness": 56,
+    "topTypes": [
+      {
+        "type": "Image",
+        "count": 70
+      },
+      {
+        "type": "Dataset",
+        "count": 46
+      },
+      {
+        "type": "Software",
+        "count": 26
+      }
+    ]
+  },
+  {
+    "name": "Universidad de Los Andes, Chile",
+    "count": 111,
+    "avgCompleteness": 58.1,
+    "topTypes": [
+      {
+        "type": "Collection",
+        "count": 52
+      },
+      {
+        "type": "Dataset",
+        "count": 43
+      },
+      {
+        "type": "Image",
+        "count": 10
+      }
+    ]
+  },
+  {
+    "name": "Área de Entomología, Museo Nacional de Historia Natural, Santiago, Chile.",
+    "count": 106,
+    "avgCompleteness": 53.9,
+    "topTypes": [
+      {
+        "type": "Image",
+        "count": 80
+      },
+      {
+        "type": "Dataset",
+        "count": 26
+      }
+    ]
+  },
+  {
+    "name": "Sociedad Chilena de Entomología, Santiago, Chile. willogonzalez@yahoo.com",
+    "count": 96,
+    "avgCompleteness": 60,
+    "topTypes": [
+      {
+        "type": "Image",
+        "count": 96
+      }
+    ]
+  },
+  {
+    "name": "https://orcid.org/0009-0000-6396-2803 * Corresponding author. & Sociedad Chilena de Entomología, Santiago, Chile. willogonzalez@yahoo.com",
+    "count": 96,
+    "avgCompleteness": 60,
+    "topTypes": [
+      {
+        "type": "Image",
+        "count": 96
+      }
+    ]
+  },
+  {
+    "name": "Universidad de La Frontera",
+    "count": 81,
+    "avgCompleteness": 57.3,
+    "topTypes": [
+      {
+        "type": "Image",
+        "count": 50
+      },
+      {
+        "type": "Dataset",
+        "count": 29
+      },
+      {
+        "type": "Software",
+        "count": 2
+      }
+    ]
+  },
+  {
+    "name": "Universidad de Tarapacá, Facultad de Ciencias Agronómicas, Departamento de Recursos Ambientales, Arica, Chile",
+    "count": 73,
+    "avgCompleteness": 56.7,
+    "topTypes": [
+      {
+        "type": "Image",
+        "count": 58
+      },
+      {
+        "type": "Dataset",
+        "count": 15
+      }
+    ]
+  },
+  {
+    "name": "Universidad de Talca",
+    "count": 72,
+    "avgCompleteness": 58.6,
+    "topTypes": [
+      {
+        "type": "Image",
+        "count": 30
+      },
+      {
+        "type": "Dataset",
+        "count": 29
+      },
+      {
+        "type": "InteractiveResource",
+        "count": 8
+      }
+    ]
+  },
+  {
+    "name": "Área de Entomología, Museo Nacional de Historia Natural, Santiago, Chile:",
+    "count": 68,
+    "avgCompleteness": 59.3,
+    "topTypes": [
+      {
+        "type": "Image",
+        "count": 62
+      },
+      {
+        "type": "Dataset",
+        "count": 6
+      }
+    ]
+  },
+  {
+    "name": "Moscas Florícolas de Chile Citizen Science Program, Patricio Lynch 940, Valdivia, Chile.",
+    "count": 68,
+    "avgCompleteness": 59.3,
+    "topTypes": [
+      {
+        "type": "Image",
+        "count": 62
+      },
+      {
+        "type": "Dataset",
+        "count": 6
+      }
+    ]
+  },
+  {
+    "name": "Universidad Central de Chile",
+    "count": 67,
+    "avgCompleteness": 70.1,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 26
+      },
+      {
+        "type": "Other",
+        "count": 18
+      },
+      {
+        "type": "InteractiveResource",
+        "count": 13
+      }
+    ]
+  },
+  {
+    "name": "Universidad Católica de Valparaíso, Facultad de Recursos Naturales, Escuela de Ciencias del Mar, Avda. Brasil 2950, Valparaíso, Chile.",
+    "count": 67,
+    "avgCompleteness": 57.3,
+    "topTypes": [
+      {
+        "type": "Image",
+        "count": 60
+      },
+      {
+        "type": "Dataset",
+        "count": 7
+      }
+    ]
+  },
+  {
+    "name": "Instituto de Entomología, Facultad de Ciencias Básicas, Universidad Metropolitana de Ciencias de la Educación, Santiago, Chile. christian.gonzalez@umce.cl https://orcid.org/0000-0003-2582-6071",
+    "count": 62,
+    "avgCompleteness": 60,
+    "topTypes": [
+      {
+        "type": "Image",
+        "count": 62
+      }
+    ]
+  },
+  {
+    "name": "Servicio Agrícola y Ganadero, Sub-departamento Laboratorios y Estación Cuarentenaria Agrícola, Santiago, Chile. camila.carvacho@sag.gob.cl https://orcid.org/0009-0006-1941-8855",
+    "count": 62,
+    "avgCompleteness": 60,
+    "topTypes": [
+      {
+        "type": "Image",
+        "count": 62
+      }
+    ]
+  },
+  {
+    "name": "Moscas Florícolas de Chile Citizen Science Program, Patricio Lynch 940, Valdivia, Chile. & Departamento de Ciencias Biológicas y Biodiversidad, Universidad de Los Lagos, Av. Fuschlöcher 1305, Osorno, Chile. rbarahona13@gmail.com https://orcid.org/0000-0002-1509-2935",
+    "count": 62,
+    "avgCompleteness": 60,
+    "topTypes": [
+      {
+        "type": "Image",
+        "count": 62
+      }
+    ]
+  },
+  {
+    "name": "Área Zoología de Invertebrados, Museo Nacional de Historia Natural de Chile, Casilla 787, Correo Central, Santiago, Chile jorge.perez@mnhn.gob.cl",
+    "count": 62,
+    "avgCompleteness": 50,
+    "topTypes": [
+      {
+        "type": "Image",
+        "count": 62
+      }
+    ]
+  },
+  {
+    "name": "https://orcid.org/0000-0003-4537-5677 & Área Zoología de Invertebrados, Museo Nacional de Historia Natural de Chile, Casilla 787, Correo Central, Santiago, Chile jorge.perez@mnhn.gob.cl",
+    "count": 62,
+    "avgCompleteness": 50,
+    "topTypes": [
+      {
+        "type": "Image",
+        "count": 62
+      }
+    ]
+  },
+  {
+    "name": "Centro de Investigación en Recursos Naturales y Sustentabilidad (CIRENYS), Universidad Bernardo O'Higgins, Av. Viel 1497, Santiago, Chile limnoleo@gmail.com",
+    "count": 62,
+    "avgCompleteness": 50,
+    "topTypes": [
+      {
+        "type": "Image",
+        "count": 62
+      }
+    ]
+  },
+  {
+    "name": "https://orcid.org/0000-0001-9550-1921 & Programa de Doctorado en Sostenibilidad Agropecuaria y Veterinaria, Facultad de Medicina Veterinaria y Agronomía, Universidad de Las Américas, Manuel Montt 948, Providencia, Santiago, Chile Corresponding author",
+    "count": 62,
+    "avgCompleteness": 50,
+    "topTypes": [
+      {
+        "type": "Image",
+        "count": 62
+      }
+    ]
+  },
+  {
+    "name": "https://orcid.org/0000-0002-7587-3936 & Área Zoología de Invertebrados, Museo Nacional de Historia Natural de Chile, Casilla 787, Correo Central, Santiago, Chile jorge.perez@mnhn.gob.cl",
+    "count": 62,
+    "avgCompleteness": 50,
+    "topTypes": [
+      {
+        "type": "Image",
+        "count": 62
+      }
+    ]
+  },
+  {
+    "name": "https://orcid.org/0000-0002-8623-1576 & Área Zoología de Invertebrados, Museo Nacional de Historia Natural de Chile, Casilla 787, Correo Central, Santiago, Chile jorge.perez@mnhn.gob.cl",
+    "count": 62,
+    "avgCompleteness": 50,
+    "topTypes": [
+      {
+        "type": "Image",
+        "count": 62
+      }
+    ]
+  },
+  {
+    "name": "https://orcid.org/0000-0003-4537-5677 & Programa de Pós-graduação em Biologia Comparada, Departamento de Biologia, Faculdade de Filosofia, Ciências e Letras de Ribeirão Preto (FFCLRP), Universidade de São Paulo (USP), Ribeirão Preto, São Paulo, Brazil & Área Zoología de Invertebrados, Museo Nacional de Historia Natural de Chile, Casilla 787, Correo Central, Santiago, Chile jorge.perez@mnhn.gob.cl",
+    "count": 62,
+    "avgCompleteness": 50,
+    "topTypes": [
+      {
+        "type": "Image",
+        "count": 62
+      }
+    ]
+  },
+  {
+    "name": "Central Bank of Chile",
+    "count": 56,
+    "avgCompleteness": 31.2,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 53
+      },
+      {
+        "type": "Software",
+        "count": 2
+      },
+      {
+        "type": "Other",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "name": "Departamento de Recursos Ambientales, Facultad de Ciencias Agronómicas, Universidad de Tarapacá, Arica, Chile",
+    "count": 53,
+    "avgCompleteness": 49.8,
+    "topTypes": [
+      {
+        "type": "Image",
+        "count": 36
+      },
+      {
+        "type": "Dataset",
+        "count": 17
+      }
+    ]
+  },
+  {
+    "name": "Zoological Museum of the Moscow Lomonosov State University, Bolshaya Nikitskaja Str. 2, Moscow, 125009, Russia. schileyko1965@gmail.com",
+    "count": 48,
+    "avgCompleteness": 50,
+    "topTypes": [
+      {
+        "type": "Image",
+        "count": 48
+      }
+    ]
+  },
+  {
+    "name": "Universidad de Tarapacá, Facultad de Ciencias Agronómicas, Departamento de Recursos Ambientales, Arica, Chile.",
+    "count": 48,
+    "avgCompleteness": 60,
+    "topTypes": [
+      {
+        "type": "Image",
+        "count": 48
+      }
+    ]
+  },
+  {
+    "name": "Instituto Antártico Chileno",
+    "count": 46,
+    "avgCompleteness": 59.3,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 35
+      },
+      {
+        "type": "Image",
+        "count": 6
+      },
+      {
+        "type": "Other",
+        "count": 3
+      }
+    ]
+  },
+  {
+    "name": "Universidad Diego Portales",
+    "count": 46,
+    "avgCompleteness": 64.3,
+    "topTypes": [
+      {
+        "type": "Dataset",
+        "count": 44
+      },
+      {
+        "type": "Other",
+        "count": 2
+      }
+    ]
+  },
+  {
+    "name": "Instituto de Entomología, Facultad de Ciencias Básicas, Universidad Metropolitana de Ciencias de la Educación, Santiago, Chile christian.gonzalez@umce.cl",
+    "count": 46,
+    "avgCompleteness": 60,
+    "topTypes": [
+      {
+        "type": "Image",
+        "count": 46
+      }
+    ]
+  },
+  {
+    "name": "Departamento de Ciencias Biológicas y Biodiversidad, Universidad de Los Lagos, Av. Fuschlöcher 1305, Osorno, Chile Present address: Departamento de Ciencias Biológicas y Biodiversidad, Universidad de Los Lagos, Av. Fuchslöcher 1305, Osorno, Chile rodrigo.barahona@ulagos.cl",
+    "count": 46,
+    "avgCompleteness": 60,
+    "topTypes": [
+      {
+        "type": "Image",
+        "count": 46
+      }
+    ]
+  },
+  {
+    "name": "https://orcid.org/0000-0002-1509-2935 & Moscas Florícolas de Chile Citizen Science Program, Av. Fuschlöcher 1305, Osorno, Chile",
+    "count": 46,
+    "avgCompleteness": 60,
+    "topTypes": [
+      {
+        "type": "Image",
+        "count": 46
+      }
+    ]
+  },
+  {
+    "name": "Instituto de Entomología, Universidad Metropolitana de Ciencias de la Educación, Santiago, Chile christian.gonzalez@umce.cl",
+    "count": 46,
+    "avgCompleteness": 60,
+    "topTypes": [
+      {
+        "type": "Image",
+        "count": 46
+      }
+    ]
+  }
+]

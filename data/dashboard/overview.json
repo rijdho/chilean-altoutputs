@@ -1,0 +1,34 @@
+{
+  "totalRecords": 18366,
+  "bySource": {
+    "DataCite": 17424,
+    "ANID": 942
+  },
+  "byType": {
+    "Audiovisual": 167,
+    "Collection": 685,
+    "ComputationalNotebook": 23,
+    "DataPaper": 1,
+    "Dataset": 11600,
+    "Image": 4305,
+    "InteractiveResource": 77,
+    "Model": 35,
+    "Other": 476,
+    "OutputManagementPlan": 272,
+    "PhysicalObject": 8,
+    "Software": 712,
+    "Workflow": 5
+  },
+  "avgCompleteness": 44.9,
+  "fieldCount": 10,
+  "software": {
+    "dois": 712,
+    "dataciteDois": 704,
+    "dataciteConcepts": 279
+  },
+  "harvested": {
+    "DataCite": "2026-10-20",
+    "ANID": "2026-10-20"
+  },
+  "generatedAt": "2026-10-20T10:06:35.656Z"
+}
