@@ -7,6 +7,7 @@ abstract: >-
   affiliated in Chile, and those in ANID's repository. It shows where they are deposited, under which
   licence, and how completely they are described. Each record is checked for ten metadata fields. The harvest and scoring pipeline is in
   the repository; the aggregated results in data/dashboard/ are under CC BY 4.0. Code under MIT.
+  It runs at https://rijdho.github.io/chilean-altoutputs/.
 type: software
 authors:
   - family-names: "Hartley Belmar"
